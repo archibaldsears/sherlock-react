@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sherlock-react/static/css/main.dc9d39fe.css",
-    "main.js": "/sherlock-react/static/js/main.a23a71fb.js",
+    "main.js": "/sherlock-react/static/js/main.445490ca.js",
     "static/js/787.81a6bda5.chunk.js": "/sherlock-react/static/js/787.81a6bda5.chunk.js",
     "static/media/Adapt-img@4x.webp": "/sherlock-react/static/media/Adapt-img@4x.bb14ccd014107825d408.webp",
-    "static/media/faces@4x.webp": "/sherlock-react/static/media/faces@4x.d72805f714c3d1eabdd3.webp",
     "static/media/Desktop-img@4x.webp": "/sherlock-react/static/media/Desktop-img@4x.690ad1659be43cb33273.webp",
     "static/media/Kollektif-Bold.ttf": "/sherlock-react/static/media/Kollektif-Bold.d97641da7b1897b8ee19.ttf",
     "static/media/Create-img@4x.webp": "/sherlock-react/static/media/Create-img@4x.aecbacbe20d39a99bfdb.webp",
     "static/media/illustration-home-PM@4x.webp": "/sherlock-react/static/media/illustration-home-PM@4x.8fd023d113ab08725c03.webp",
+    "static/media/faces@4x.svg": "/sherlock-react/static/media/faces@4x.95962bb5a7dff03b0ad1c37c54b19c7d.svg",
     "static/media/Kollektif-BoldItalic.ttf": "/sherlock-react/static/media/Kollektif-BoldItalic.577d896c027c07a14345.ttf",
     "static/media/pipeline-img-1@4x.webp": "/sherlock-react/static/media/pipeline-img-1@4x.17ba220bd756592abc1a.webp",
     "static/media/Kollektif.ttf": "/sherlock-react/static/media/Kollektif.33fdfd1d0f21c0c8283b.ttf",
@@ -20,11 +20,11 @@
     "static/media/sherlock-pipeline-logo@4x.webp": "/sherlock-react/static/media/sherlock-pipeline-logo@4x.b7d372121728e8631101.webp",
     "index.html": "/sherlock-react/index.html",
     "main.dc9d39fe.css.map": "/sherlock-react/static/css/main.dc9d39fe.css.map",
-    "main.a23a71fb.js.map": "/sherlock-react/static/js/main.a23a71fb.js.map",
+    "main.445490ca.js.map": "/sherlock-react/static/js/main.445490ca.js.map",
     "787.81a6bda5.chunk.js.map": "/sherlock-react/static/js/787.81a6bda5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc9d39fe.css",
-    "static/js/main.a23a71fb.js"
+    "static/js/main.445490ca.js"
   ]
 }
