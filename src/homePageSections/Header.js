@@ -14,7 +14,7 @@ const Header = ({option1, option2, option3, option4, option5, option6}) => {
         <p>{option3}</p>
       </a>
       <a href="/#">
-        <img src={sherlockLogo} alt='Sherlodk Logo' />
+        <img src={sherlockLogo} alt='Sherlock Logo' />
       </a>
       <a href="/">
         <p>{option4}</p>
