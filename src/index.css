@@ -3,21 +3,22 @@
   font-family: "Kollektif-bold";   /*Can be any text*/
   src: local("Kollektif-Bold"),
     url("./fonts/Kollektif-Bold.ttf") format("truetype");
-    font-display: swap;
+    /* font-display: swap; */
+
 }
 
 @font-face {
   font-family: "Kollektif";   /*Can be any text*/
   src: local("Kollektif"),
     url("./fonts/Kollektif.ttf") format("truetype");
-    font-display: swap;
+    /* font-display: swap; */
 }
 
 @font-face {
   font-family: "Kollektif-Italic";   /*Can be any text*/
   src: local("Kollektif-Italic"),
     url("./fonts/Kollektif-Italic.ttf") format("truetype");
-    font-display: swap;
+    /* font-display: swap; */
 }
 
 
@@ -25,7 +26,7 @@
   font-family: "Kollektif-BoldItalic";   /*Can be any text*/
   src: local("Kollektif-BoldItalic"),
     url("./fonts/Kollektif-BoldItalic.ttf") format("truetype");
-    font-display: swap;
+    /* font-display: swap; */
 }
 
 * {
@@ -34,15 +35,17 @@
 html, body {
   font-family: Kollektif, Helvetica, sans-serif;
   background-color: #FEF7ED;
+  -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased !important;
+font-synthesis: none;
 }
 
 body {
   margin: 0 auto;
-  font-family: Kollektif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: Kollektif;
   -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+font-synthesis: none;
   width: 100%;
 }
 

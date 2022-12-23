@@ -11,7 +11,8 @@
   --almostBlack: #64666A;
   
   transition: all 600ms ease-in-out;
-
+  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
+-webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
 
 }
 
@@ -29,15 +30,20 @@ h1 {
   padding: 0;
   font-family: Kollektif-Bold, sans-serif;
   /* letter-spacing: -0.05rem; */
-
+  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
+  -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
 }
 h2 {
   font-family: Kollektif-Bold, sans-serif;
   /* letter-spacing: -0.05rem; */
+  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
+  -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
 }
 h3 {
   font-family: Kollektif-Bold, sans-serif;
   /* letter-spacing: -0.05rem; */
+  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
+  -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
 }
 p {
   margin: 0;
@@ -45,6 +51,8 @@ p {
   font-family: Kollektif, sans-serif;
   font-size: 1rem;
   /* letter-spacing: -0.02rem; */
+  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
+  -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
 }
 h3 {
   font-size: 2rem;
