@@ -1,3 +1,5 @@
+import '../css/VideoContainer.css'
+
 const VideoContainer = ({videoImg}) => {
   return (
     <div className='Main-container'>

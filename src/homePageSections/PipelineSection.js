@@ -1,4 +1,4 @@
-
+import '../css/PipelineSection.css'
 
 const PipelineSection = (props) => { 
   return (
@@ -29,7 +29,7 @@ const PipelineSection = (props) => {
           </div>
           <img src={props.adaptImg} alt="" />
         </div>
-        <div className='Manage-container '>
+        <div className='Manage-container Full-container'>
           <img src={props.manageImg} alt="" />
           <div>
             <h3>Manage.</h3>
