@@ -1,4 +1,4 @@
-import '../css/HomepageSection.css'
+import '../css/HomepageSection.scss'
 
 const ManageAnimation = ({faceImg}) => {
   return (

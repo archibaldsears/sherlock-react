@@ -1,4 +1,4 @@
-import '../css/HomeStrengths.css'
+import '../css/HomeStrengths.scss'
 import CardItems from '../components/CardItems'
 
 const HomeStrengths = ({homeImg1, homeImg2, homeImg3}) => {

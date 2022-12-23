@@ -1,4 +1,4 @@
-import '../css/VideoContainer.css'
+import '../css/VideoContainer.scss'
 
 const VideoContainer = ({videoImg}) => {
   return (

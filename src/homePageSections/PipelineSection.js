@@ -1,4 +1,5 @@
-import '../css/PipelineSection.css'
+import '../css/PipelineSection.scss'
+import ImageTxtFullWidth from '../components/ImageTxtFullWidth'
 
 const PipelineSection = (props) => { 
   return (
@@ -13,14 +14,18 @@ const PipelineSection = (props) => {
           </div>
           <img src={props.pipelineImg1} alt="" />
         </div>
-        <div className='Create-container Full-container'>
+
+        <ImageTxtFullWidth
+
+        />
+        {/* <div className='Create-container Full-container'>
           <img src={props.createImg} alt="" />
           <div>
             <h3 className='orange-color-text'>Create.</h3>
             <p>We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures.</p>
             <button>Try it out</button>
           </div>
-        </div>
+        </div> */}
         <div className='Adapt-container Full-container'>
           <div className="Main-container">
             <h3>Adapt.</h3>

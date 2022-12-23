@@ -1,0 +1,65 @@
+.App-header {
+    font-size: 1.5rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr) 2fr minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr);
+    margin: 0 auto;
+    height: 20vh;
+    grid-template-rows: 20vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Kollektif, sans-serif;
+
+    --stagger-delay: 300ms;
+
+    img {
+      max-width: 300px;
+      animation: wordEntrance 700ms ease-out;
+      animation-fill-mode: backwards;
+    }
+
+
+    a {
+      text-align: center;
+      text-decoration: inherit;
+      color: #64666A;
+      animation: wordEntrance 700ms ease-out;
+      animation-fill-mode: backwards;
+      
+      a:nth-child(5) {
+        animation-delay: calc(1 * var(--stagger-delay));
+      }
+    
+      a:nth-child(6) {
+        animation-delay: calc(2 * var(--stagger-delay));
+      }
+    
+      a:nth-child(7) {
+        animation-delay: calc(3 * var(--stagger-delay));
+      }
+    }
+
+    @for $i from 1 through 3  {
+      a:nth-child( #{$i} ) {
+        animation-delay: calc($i * var(--stagger-delay));
+      }
+    }
+
+    
+
+  }
+
+
+
+@keyframes wordEntrance {
+    from {
+      opacity: 0;
+      transform: scale(0.7, 0.2);
+      rotate: 1deg;
+
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
