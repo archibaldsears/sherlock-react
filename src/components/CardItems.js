@@ -1,16 +1,16 @@
 import Button from "./Button"
 
-const CardItems = ({id, image, title, copy, btnText, btnColor, type, BtnOnclick }) => {
+const CardItems = ({ card }) => {
   return (
     <div>
-        <img src={image} alt="" />
-        <h3>{title}t</h3>
-        <p>{copy}</p>
+        <img src={card.image} alt="" />
+        <h3>{card.title}t</h3>
+        <p>{card.copy}</p>
         <Button 
-        Text={btnText}
-        Color={btnColor}
-        Type={type}
-        onClick={BtnOnclick}
+        Text={card.btnText}
+        Color={card.btnColor}
+        Type={card.type}
+        onClick={card.BtnOnclick}
         />
   </div>
   )

@@ -93,12 +93,7 @@
     grid-area: opt5;
     opacity: var(--opacity5);
     animation: move-5 var(--animation-timing) linear;
-    animation-timing-function: var(--animation-tween);
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-timing-function: steps(jump-none);
-    animation-iteration-count: infinite;
+
   }
   .Section-one h2.sixth {
     grid-area: opt6;
@@ -111,6 +106,8 @@
     animation-timing-function: steps(jump-none);
     animation-iteration-count: infinite;
   }
+
+   
 
 
 
