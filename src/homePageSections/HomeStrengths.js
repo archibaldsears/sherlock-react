@@ -1,10 +1,12 @@
+import '../css/HomeStrengths.css'
+
 const HomeStrengths = ({homeImg1, homeImg2, homeImg3}) => {
   return (
     <div className='Full-container' style={{backgroundColor: 'white', position: 'relative', zIndex: '2'  }}>
     
-    <div className='Main-container'>
+    <div className='Main-container paddingSH'>
     <h1 className='Second-header'>With 10+ years in business and over 5 million assets delivered, we’ve gotten pretty good at a few things. r/w</h1>
-    <section className='Section-two' > 
+    <section className='Section-two paddingSH' > 
         <div>
           <img src={homeImg1} alt="" />
           <h3>Project Management</h3>

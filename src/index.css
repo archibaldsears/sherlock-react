@@ -27,7 +27,7 @@
 * {
   box-sizing: border-box;
 }
-/* html, body {
+html, body {
   font-family: Kollektif, Helvetica, sans-serif;
   background-color: #FEF7ED;
 }
@@ -46,4 +46,4 @@ code {
   font-family: Kollektif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
- */
+

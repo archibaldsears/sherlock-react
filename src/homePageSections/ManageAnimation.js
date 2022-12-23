@@ -12,7 +12,7 @@ const ManageAnimation = ({faceImg}) => {
       <h2 className='fifth'>worldwide ad creation.</h2>
       <h2 className='sixth'>creative design</h2>
     </section>
-    <div className='Full-container'>
+    <div className='Full-container faces'>
         <img src={faceImg} alt="" />
     </div>
   </div>

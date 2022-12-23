@@ -26,6 +26,8 @@
     text-align: left;
     font-size: 3.5rem;
     color: var(--red);
+    
+
   }
   .Section-one h2.first {
     grid-area: opt1;
@@ -51,15 +53,26 @@
     grid-area: opt6;
     opacity: 30%;
   }
+
+
+
   
   
   
-   .FullWidth img {
-    max-width: 1800px;
+   .faces img {
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     position: relative;
-    top: 120px;
+    top: 150px;
     z-index: 1;
   }
   
+  @keyframes wordSwap {
+    from {
+      grid-area: opt1;
+    }
+    to {
+        grid-area: opt2;
+    }
+}

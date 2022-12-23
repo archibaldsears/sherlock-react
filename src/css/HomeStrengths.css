@@ -1,0 +1,52 @@
+
+
+
+
+
+/* section two */
+
+.Second-header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+    padding-top: 8rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .Section-two img {
+    max-width: 340px;
+    padding-bottom: 1rem;
+  }
+  
+  .Section-two {
+    display: grid;
+    margin: 0 auto;
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding-bottom: 8rem;
+    padding-left: 1rem;
+    padding-right:1rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .Section-two > div {
+    padding:0  1rem;
+  }
+  .Section-two p {
+    text-align: left;
+    padding: 1rem 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  
+  
+  @media (max-width: 1000px) { 
+    .Section-two > div {
+      grid-column: span 4;
+    }
+  }

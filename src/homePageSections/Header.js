@@ -3,28 +3,28 @@ import '../css/AppHeader.css'
 const Header = ({option1, option2, option3, option4, option5, option6}) => {
   return (
     <div className="Full-container">
-    <header className="App-header">
-    <a href="/">
-      {option1}
-    </a>
-    <a href="/">
-      {option2}
-    </a>        
-    <a href="/">
-      {option3}
-    </a>
-    <a href="/">
-      <img src={sherlockLogo} alt="" />
-    </a>
-    <a href="/">
-      {option4}
-    </a>
-    <a href="/">
-      {option5}
-    </a>
-    <a href="/">
-      {option6}
-    </a>
+    <header className="App-header paddingSH">
+      <a href="/">
+        <p>{option1}</p>
+      </a>
+      <a href="/">
+        <p>{option2}</p>
+      </a>        
+      <a href="/">
+        <p>{option3}</p>
+      </a>
+      <a href="/">
+        <img src={sherlockLogo} alt="" />
+      </a>
+      <a href="/">
+        <p>{option4}</p>
+      </a>
+      <a href="/">
+        <p>{option5}</p>
+      </a>
+      <a href="/">
+        <p>{option6}</p>
+      </a>
   </header>
   </div>
   )
