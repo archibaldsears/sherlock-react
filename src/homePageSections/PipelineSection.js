@@ -1,6 +1,6 @@
 
 
-const PipelineSection = (props) => {
+const PipelineSection = (props) => { 
   return (
     <div className='Full-container'>
     <section className='Pipeline-container'>
