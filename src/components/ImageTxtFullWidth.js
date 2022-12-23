@@ -10,7 +10,7 @@ if ({direction} === 'left') {
             <div>
             <h3 className='orange-color-text'>{title}</h3>
             <p>{text}</p>
-            <Button
+            <Button />
             </div>
         </div>
       )
