@@ -2,7 +2,7 @@
 import './App.css';
 
 //images
-import faceImg from './images/faces@4x.webp';
+import faceImg from './images/faces@4x.svg';
 import homeImg1 from './images/illustration-home-PM@4x.webp'
 import homeImg2 from './images/illustration-home-DM@4x.webp'
 import videoImg from './images/video@4x.webp'
