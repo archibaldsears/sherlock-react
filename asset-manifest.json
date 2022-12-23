@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sherlock-react/static/css/main.606a1dc8.css",
+    "main.css": "/sherlock-react/static/css/main.6cdbffe7.css",
     "main.js": "/sherlock-react/static/js/main.00ce8993.js",
     "static/js/787.81a6bda5.chunk.js": "/sherlock-react/static/js/787.81a6bda5.chunk.js",
     "static/media/Adapt-img@4x.png": "/sherlock-react/static/media/Adapt-img@4x.2885947a7c712fe585e1.png",
@@ -19,12 +19,12 @@
     "static/media/sherlock-logo@4x.png": "/sherlock-react/static/media/sherlock-logo@4x.c86bc1d18557c0d44cb3.png",
     "static/media/Kollektif-Italic.ttf": "/sherlock-react/static/media/Kollektif-Italic.0e7ef841e38b13bbac89.ttf",
     "index.html": "/sherlock-react/index.html",
-    "main.606a1dc8.css.map": "/sherlock-react/static/css/main.606a1dc8.css.map",
+    "main.6cdbffe7.css.map": "/sherlock-react/static/css/main.6cdbffe7.css.map",
     "main.00ce8993.js.map": "/sherlock-react/static/js/main.00ce8993.js.map",
     "787.81a6bda5.chunk.js.map": "/sherlock-react/static/js/787.81a6bda5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.606a1dc8.css",
+    "static/css/main.6cdbffe7.css",
     "static/js/main.00ce8993.js"
   ]
 }
