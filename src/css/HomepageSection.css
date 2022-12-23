@@ -9,8 +9,20 @@
     ". opt4"
     ". opt5"
     ". opt6";
+
+
     margin: 0 auto;
     align-items: center;
+
+    --animation-timing: 30s;
+    --animation-tween:cubic-bezier(0.8, 0.1, 0.1, 1);
+
+    --opacity1: 10%;
+    --opacity2: 100%;
+    --opacity3: 50%;
+    --opacity4: 30%;
+    --opacity5: 20%;
+    --opacity6: 10%;
   }
   .Section-one h1 {
     grid-area: header;
@@ -26,32 +38,78 @@
     text-align: left;
     font-size: 3.5rem;
     color: var(--red);
-    
-
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-timing-function: steps(jump-none);
+    animation-iteration-count: infinite;
+    background-color: rgba(254, 247, 237, 20);
   }
   .Section-one h2.first {
     grid-area: opt1;
-    opacity: 80%;
+    opacity: var(--opacity1);
+    animation: move-1 var(--animation-timing) linear;
+    animation-timing-function: var(--animation-tween);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-timing-function: steps(jump-none);
+    animation-iteration-count: infinite;
   }
   .Section-one h2.second {
     grid-area: opt2;
-    opacity: 100%;
+    opacity: var(--opacity2);
+    animation: move-2 var(--animation-timing) linear;
+    animation-timing-function: var(--animation-tween);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-timing-function: steps(jump-none);
+    animation-iteration-count: infinite;
   }
   .Section-one h2.third {
     grid-area: opt3;
-    opacity: 80%;
+    opacity: var(--opacity3);
+    animation: move-3 var(--animation-timing) linear;
+    animation-timing-function: var(--animation-tween);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-timing-function: steps(jump-none);
+    animation-iteration-count: infinite;
   }
   .Section-one h2.fourth {
     grid-area: opt4;
-    opacity: 50%;
+    opacity: var(--opacity4);
+    animation: move-4 var(--animation-timing) linear;
+    animation-timing-function: var(--animation-tween);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-timing-function: steps(jump-none);
+    animation-iteration-count: infinite;
   }
   .Section-one h2.fifth {
     grid-area: opt5;
-    opacity: 40%;
+    opacity: var(--opacity5);
+    animation: move-5 var(--animation-timing) linear;
+    animation-timing-function: var(--animation-tween);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-timing-function: steps(jump-none);
+    animation-iteration-count: infinite;
   }
   .Section-one h2.sixth {
     grid-area: opt6;
-    opacity: 30%;
+    opacity: var(--opacity6);
+    animation: move-6 var(--animation-timing);
+    animation-timing-function: var(--animation-tween);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-timing-function: steps(jump-none);
+    animation-iteration-count: infinite;
   }
 
 
@@ -68,11 +126,251 @@
     z-index: 1;
   }
   
-  @keyframes wordSwap {
-    from {
-      grid-area: opt1;
+  @keyframes move-1 {
+    0% {
+      position: relative;
+      top:0rem;
+      opacity: var(--opacity1);
+      /* grid-area: opt1; */
     }
-    to {
-        grid-area: opt2;
+    14% {
+      position: relative;
+      top: 5rem;
+      opacity: var(--opacity2);
+        /* grid-area: opt6; */
     }
+    28% {
+      position: relative;
+      top: 10rem;
+      opacity: var(--opacity3);
+        /* grid-area: opt6; */
+    }
+    42% {
+      position: relative;
+      top: 15rem;
+      opacity: var(--opacity4);
+    }
+    64% {
+      position: relative;
+      top: 20rem;
+      opacity: var(--opacity5);
+    }
+    78% {
+      position: relative;
+      top: 25rem;
+      opacity: var(--opacity6);
+    }
+    100% {
+      position: relative;
+      top: 0rem;
+      opacity: var(--opacity1);
+    }
+  }
+
+
+  @keyframes move-2 {
+    0% {
+      position: relative;
+      top:0rem;
+      opacity: var(--opacity2);
+      /* grid-area: opt1; */
+    }
+    14% {
+      position: relative;
+      top: 5rem;
+      opacity: var(--opacity3);
+        /* grid-area: opt6; */
+    }
+    28% {
+      position: relative;
+      top: 10rem;
+      opacity: var(--opacity4);
+        /* grid-area: opt6; */
+    }
+    42% {
+      position: relative;
+      top: 15rem;
+      opacity: var(--opacity5);
+    }
+    64% {
+      position: relative;
+      top: 20rem;
+      opacity: var(--opacity6);
+    }
+    78% {
+      position: relative;
+      top: -5rem;
+      opacity: var(--opacity1);
+    }
+    100% {
+      position: relative;
+      top: 0rem;
+      opacity: var(--opacity2);
+    }
+  }
+
+
+  @keyframes move-3 {
+    0% {
+      position: relative;
+      top:0rem;
+      opacity: var(--opacity3);
+      /* grid-area: opt1; */
+    }
+    14% {
+      position: relative;
+      top: 5rem;
+      opacity: var(--opacity4);
+        /* grid-area: opt6; */
+    }
+    28% {
+      position: relative;
+      top: 10rem;
+      opacity: var(--opacity5);
+        /* grid-area: opt6; */
+    }
+    42% {
+      position: relative;
+      top: 15rem;
+      opacity: var(--opacity6);
+    }
+    64% {
+      position: relative;
+      top: -10rem;
+      opacity: var(--opacity1);
+    }
+    78% {
+      position: relative;
+      top: -5rem;
+      opacity: var(--opacity2);
+    }
+    100% {
+      position: relative;
+      top: 0rem;
+      opacity: var(--opacity3);
+    }
+  }
+
+  @keyframes move-4 {
+    0% {
+      position: relative;
+      top:0rem;
+      opacity: var(--opacity4);
+      /* grid-area: opt1; */
+    }
+    14% {
+      position: relative;
+      top: 5rem;
+      opacity: var(--opacity5);
+        /* grid-area: opt6; */
+    }
+    28% {
+      position: relative;
+      top: 10rem;
+      opacity: var(--opacity6);
+        /* grid-area: opt6; */
+    }
+    42% {
+      position: relative;
+      top: -15rem;
+      opacity: var(--opacity1);
+    }
+    64% {
+      position: relative;
+      top: -10rem;
+      opacity: var(--opacity2);
+    }
+    78% {
+      position: relative;
+      top: -5rem;
+      opacity: var(--opacity3);
+    }
+    100% {
+      position: relative;
+      top: 0rem;
+      opacity: var(--opacity4);
+    }
+  }
+
+  @keyframes move-5 {
+    0% {
+      position: relative;
+      top:0rem;
+      /* grid-area: opt1; */
+      opacity: var(--opacity5);
+    }
+    14% {
+      position: relative;
+      top: 5rem;
+      opacity: var(--opacity6);
+        /* grid-area: opt6; */
+    }
+    28% {
+      position: relative;
+      top: -20rem;
+      opacity: var(--opacity1);
+        /* grid-area: opt6; */
+    }
+    42% {
+      position: relative;
+      top: -15rem;
+      opacity: var(--opacity2);
+    }
+    64% {
+      position: relative;
+      top: -10rem;
+      opacity: var(--opacity3);
+    }
+    78% {
+      position: relative;
+      top: -5rem;
+      opacity: var(--opacity4);
+    }
+    100% {
+      position: relative;
+      top: 0rem;
+      opacity: var(--opacity5);
+    }
+  }
+
+
+@keyframes move-6 {
+  0% {
+    position: relative;
+    top:0rem;
+    /* grid-area: opt1; */
+    opacity: var(--opacity6);
+  }
+  14% {
+    position: relative;
+    top: -25rem;
+      /* grid-area: optw; */
+      opacity: var(--opacity1);
+  }
+  28% {
+    position: relative;
+    top: -20rem;
+    opacity: var(--opacity2);
+      /* grid-area: opt6; */
+  }
+  42% {
+    position: relative;
+    top: -15rem;
+    opacity: var(--opacity3);
+  }
+  64% {
+    position: relative;
+    top: -10rem;
+    opacity: var(--opacity4);
+  }
+  78% {
+    position: relative;
+    top: -5rem;
+    opacity: var(--opacity5);
+  }
+  100% {
+    position: relative;
+    top: 0rem;
+    opacity: var(--opacity6);
+  }
 }
