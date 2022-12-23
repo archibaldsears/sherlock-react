@@ -3,18 +3,21 @@
   font-family: "Kollektif-bold";   /*Can be any text*/
   src: local("Kollektif-Bold"),
     url("./fonts/Kollektif-Bold.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
   font-family: "Kollektif";   /*Can be any text*/
   src: local("Kollektif"),
     url("./fonts/Kollektif.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
   font-family: "Kollektif-Italic";   /*Can be any text*/
   src: local("Kollektif-Italic"),
     url("./fonts/Kollektif-Italic.ttf") format("truetype");
+    font-display: swap;
 }
 
 
@@ -22,6 +25,7 @@
   font-family: "Kollektif-BoldItalic";   /*Can be any text*/
   src: local("Kollektif-BoldItalic"),
     url("./fonts/Kollektif-BoldItalic.ttf") format("truetype");
+    font-display: swap;
 }
 
 * {
