@@ -14,10 +14,10 @@
     margin: 0 auto;
     align-items: center;
 
-    --animation-timing: 30s;
-    --animation-tween:cubic-bezier(0.8, 0.1, 0.1, 1);
+    --animation-timing: 35s;
+    --animation-tween:cubic-bezier(0.8, 0.05, 0.1, 1);
 
-    --opacity1: 10%;
+    --opacity1: 20%;
     --opacity2: 100%;
     --opacity3: 50%;
     --opacity4: 30%;
@@ -38,12 +38,12 @@
     text-align: left;
     font-size: 3.5rem;
     color: var(--red);
-    animation-delay: 2s;
+    /* animation-delay: 2s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     animation-timing-function: steps(jump-none);
-    animation-iteration-count: infinite;
-    background-color: rgba(254, 247, 237, 20);
+    animation-iteration-count: infinite; */
+    /* background-color: rgb(254, 247, 237, 10); */
   }
   .Section-one h2.first {
     grid-area: opt1;
@@ -103,7 +103,7 @@
   .Section-one h2.sixth {
     grid-area: opt6;
     opacity: var(--opacity6);
-    animation: move-6 var(--animation-timing);
+    animation: move-6 var(--animation-timing) linear;
     animation-timing-function: var(--animation-tween);
     animation-delay: 2s;
     animation-fill-mode: forwards;
@@ -131,39 +131,46 @@
       position: relative;
       top:0rem;
       opacity: var(--opacity1);
+      z-index: 2;
       /* grid-area: opt1; */
     }
     14% {
       position: relative;
       top: 5rem;
       opacity: var(--opacity2);
+      z-index: 2;
         /* grid-area: opt6; */
     }
     28% {
       position: relative;
       top: 10rem;
       opacity: var(--opacity3);
+      z-index: 2;
         /* grid-area: opt6; */
     }
     42% {
       position: relative;
       top: 15rem;
       opacity: var(--opacity4);
+      z-index: 2;
     }
     64% {
       position: relative;
       top: 20rem;
       opacity: var(--opacity5);
+      z-index: 2;
     }
     78% {
       position: relative;
       top: 25rem;
       opacity: var(--opacity6);
+      z-index: 1;
     }
     100% {
       position: relative;
       top: 0rem;
       opacity: var(--opacity1);
+      z-index: 1;
     }
   }
 
@@ -174,38 +181,45 @@
       top:0rem;
       opacity: var(--opacity2);
       /* grid-area: opt1; */
+      z-index: 2;
     }
     14% {
       position: relative;
       top: 5rem;
       opacity: var(--opacity3);
         /* grid-area: opt6; */
+        z-index: 2;
     }
     28% {
       position: relative;
       top: 10rem;
       opacity: var(--opacity4);
         /* grid-area: opt6; */
+        z-index: 2;
     }
     42% {
       position: relative;
       top: 15rem;
       opacity: var(--opacity5);
+      z-index: 2;
     }
     64% {
       position: relative;
       top: 20rem;
       opacity: var(--opacity6);
+      z-index: 1;
     }
     78% {
       position: relative;
       top: -5rem;
       opacity: var(--opacity1);
+      z-index: 1;
     }
     100% {
       position: relative;
       top: 0rem;
       opacity: var(--opacity2);
+      z-index: 2;
     }
   }
 
@@ -216,38 +230,45 @@
       top:0rem;
       opacity: var(--opacity3);
       /* grid-area: opt1; */
+      z-index: 2;
     }
     14% {
       position: relative;
       top: 5rem;
       opacity: var(--opacity4);
         /* grid-area: opt6; */
+        z-index: 2;
     }
     28% {
       position: relative;
       top: 10rem;
       opacity: var(--opacity5);
         /* grid-area: opt6; */
+        z-index: 2;
     }
     42% {
       position: relative;
       top: 15rem;
       opacity: var(--opacity6);
+      z-index: 1;
     }
     64% {
       position: relative;
       top: -10rem;
       opacity: var(--opacity1);
+      z-index: 1;
     }
     78% {
       position: relative;
       top: -5rem;
       opacity: var(--opacity2);
+      z-index: 2;
     }
     100% {
       position: relative;
       top: 0rem;
       opacity: var(--opacity3);
+      z-index: 2;
     }
   }
 
@@ -257,38 +278,45 @@
       top:0rem;
       opacity: var(--opacity4);
       /* grid-area: opt1; */
+      z-index: 2;
     }
     14% {
       position: relative;
       top: 5rem;
       opacity: var(--opacity5);
         /* grid-area: opt6; */
+        z-index: 2;
     }
     28% {
       position: relative;
       top: 10rem;
       opacity: var(--opacity6);
         /* grid-area: opt6; */
+        z-index: 1;
     }
     42% {
       position: relative;
       top: -15rem;
       opacity: var(--opacity1);
+      z-index: 1;
     }
     64% {
       position: relative;
       top: -10rem;
       opacity: var(--opacity2);
+      z-index: 2;
     }
     78% {
       position: relative;
       top: -5rem;
       opacity: var(--opacity3);
+      z-index: 2;
     }
     100% {
       position: relative;
       top: 0rem;
       opacity: var(--opacity4);
+      z-index: 2;
     }
   }
 
@@ -298,38 +326,45 @@
       top:0rem;
       /* grid-area: opt1; */
       opacity: var(--opacity5);
+      z-index: 2;
     }
     14% {
       position: relative;
       top: 5rem;
       opacity: var(--opacity6);
         /* grid-area: opt6; */
+        z-index: 1;
     }
     28% {
       position: relative;
       top: -20rem;
       opacity: var(--opacity1);
         /* grid-area: opt6; */
+        z-index: 1;
     }
     42% {
       position: relative;
       top: -15rem;
       opacity: var(--opacity2);
+      z-index: 2;
     }
     64% {
       position: relative;
       top: -10rem;
       opacity: var(--opacity3);
+      z-index: 2;
     }
     78% {
       position: relative;
       top: -5rem;
       opacity: var(--opacity4);
+      z-index: 2;
     }
     100% {
       position: relative;
       top: 0rem;
       opacity: var(--opacity5);
+      z-index: 2;
     }
   }
 
@@ -340,37 +375,44 @@
     top:0rem;
     /* grid-area: opt1; */
     opacity: var(--opacity6);
+    z-index: 1;
   }
   14% {
     position: relative;
     top: -25rem;
       /* grid-area: optw; */
       opacity: var(--opacity1);
+      z-index: 1;
   }
   28% {
     position: relative;
     top: -20rem;
     opacity: var(--opacity2);
+    z-index: 2;
       /* grid-area: opt6; */
   }
   42% {
     position: relative;
     top: -15rem;
     opacity: var(--opacity3);
+    z-index: 2;
   }
   64% {
     position: relative;
     top: -10rem;
     opacity: var(--opacity4);
+    z-index: 2;
   }
   78% {
     position: relative;
     top: -5rem;
     opacity: var(--opacity5);
+    z-index: 2;
   }
   100% {
     position: relative;
     top: 0rem;
     opacity: var(--opacity6);
+    z-index: 1;
   }
 }
