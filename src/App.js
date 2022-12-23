@@ -2,17 +2,17 @@
 import './App.css';
 
 //images
-import faceImg from './images/faces@4x.png';
-import homeImg1 from './images/illustration-home-PM@4x.png'
-import homeImg2 from './images/illustration-home-DM@4x.png'
-import videoImg from './images/video@4x.png'
+import faceImg from './images/faces@4x.webp';
+import homeImg1 from './images/illustration-home-PM@4x.webp'
+import homeImg2 from './images/illustration-home-DM@4x.webp'
+import videoImg from './images/video@4x.webp'
 
-import pipelineImg1 from './images/pipeline-img-1@4x.png'
-import pipelineImg2 from './images/pipeline-img-2@4x.png'
-import pipelineLogo from './images/sherlock-pipeline-logo@4x.png'
-import createImg from './images/Create-img@4x.png'
-import adaptImg from './images/Adapt-img@4x.png'
-import manageImg from './images/Desktop-img@4x.png'
+import pipelineImg1 from './images/pipeline-img-1@4x.webp'
+import pipelineImg2 from './images/pipeline-img-2@4x.webp'
+import pipelineLogo from './images/sherlock-pipeline-logo@4x.webp'
+import createImg from './images/Create-img@4x.webp'
+import adaptImg from './images/Adapt-img@4x.webp'
+import manageImg from './images/Desktop-img@4x.webp'
 
 // fonts
 import './fonts/Kollektif-Bold.ttf'

@@ -4,17 +4,17 @@ const Header = ({option1, option2, option3, option4, option5, option6}) => {
   return (
     <div className="Full-container">
     <header className="App-header paddingSH">
-      <a href="/">
+      <a href="/" >
         <p>{option1}</p>
       </a>
-      <a href="/">
+      <a href="/" >
         <p>{option2}</p>
       </a>        
       <a href="/">
         <p>{option3}</p>
       </a>
-      <a href="/">
-        <img src={sherlockLogo} alt="" />
+      <a href="/#">
+        <img src={sherlockLogo} alt='Sherlodk Logo' />
       </a>
       <a href="/">
         <p>{option4}</p>
