@@ -1,3 +1,5 @@
+import '../css/HomepageSection.css'
+
 const ManageAnimation = ({faceImg}) => {
   return (
     <div className="Main-container">

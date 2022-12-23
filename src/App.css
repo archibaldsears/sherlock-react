@@ -3,13 +3,13 @@
 
 } */
 
-import
+
 :root{
   --orange: #FFA933;
   --orange-text: #F2A130;
   --red: #BF5946;
   --almostBlack: #64666A;
-  font-size: 16px;
+  
 }
 
 .orange-color-text {
@@ -25,22 +25,22 @@ h1 {
   margin: 0;
   padding: 0;
   font-family: Kollektif-Bold, sans-serif;
-  letter-spacing: -0.05rem;
+  /* letter-spacing: -0.05rem; */
 }
 h2 {
   font-family: Kollektif-Bold, sans-serif;
-  letter-spacing: -0.05rem;
+  /* letter-spacing: -0.05rem; */
 }
 h3 {
   font-family: Kollektif-Bold, sans-serif;
-  letter-spacing: -0.05rem;
+  /* letter-spacing: -0.05rem; */
 }
 p {
   margin: 0;
   padding: 0;
   font-family: Kollektif, sans-serif;
-  font-size: 1.333rem;
-  letter-spacing: -0.02rem;
+  font-size: 1rem;
+  /* letter-spacing: -0.02rem; */
 }
 h3 {
   font-size: 2rem;
@@ -80,94 +80,12 @@ p {
 } */
 
 
-.App-header {
-  font-size: 1.5rem;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr) 2fr minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr);
-  margin: 0 auto;
-  height: 20vh;
-  grid-template-rows: 20vh;
-  align-items: center;
-  justify-content: center;
-}
-
-.App-header a {
-  text-align: center;
-  text-decoration: inherit;
-  color: #64666A;
-  
-  /* line-height: 20vh; */
-}
 
 
 
 
 
-.Section-one {
-  padding-top: 4rem;
-  display: grid;
-  grid-template-rows: repeat(7,5rem);
-  grid-template-areas:
-  ". opt1"
-  "header opt2"
-  ". opt3"
-  ". opt4"
-  ". opt5"
-  ". opt6";
-  margin: 0 auto;
-  align-items: center;
-}
-.Section-one h1 {
-  grid-area: header;
-}
-.Section-one h1 {
-  align-items: right;
-  text-align: right;
-  font-size: 3.5rem;
 
-}
-.Section-one h2 {
-  align-items: left;
-  text-align: left;
-  font-size: 3.5rem;
-  color: var(--red);
-}
-.Section-one h2.first {
-  grid-area: opt1;
-  opacity: 80%;
-}
-.Section-one h2.second {
-  grid-area: opt2;
-  opacity: 100%;
-}
-.Section-one h2.third {
-  grid-area: opt3;
-  opacity: 80%;
-}
-.Section-one h2.fourth {
-  grid-area: opt4;
-  opacity: 50%;
-}
-.Section-one h2.fifth {
-  grid-area: opt5;
-  opacity: 40%;
-}
-.Section-one h2.sixth {
-  grid-area: opt6;
-  opacity: 30%;
-}
-
-
-
- .FullWidth img {
-  max-width: 1800px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  top: 120px;
-  z-index: 1;
-}
 
 
 /* section two */

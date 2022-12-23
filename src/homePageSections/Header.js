@@ -1,5 +1,5 @@
 import sherlockLogo from '../images/sherlock-logo@4x.png'
-
+import '../css/AppHeader.css'
 const Header = ({option1, option2, option3, option4, option5, option6}) => {
   return (
     <div className="Full-container">
