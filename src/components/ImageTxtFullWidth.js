@@ -8,7 +8,7 @@ const ImageTxtFullWidth = ({direction, image, title, text, btnText, btnColor, bt
             <div>
             <h3 className='orange-color-text'>{title}</h3>
             <p>{text}</p>
-            <Button
+            <Button />
             </div>
         </div>
       )
