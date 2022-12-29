@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/sherlock-react/static/css/main.a87f8b49.css",
-    "main.js": "/sherlock-react/static/js/main.07918529.js",
+    "main.css": "/sherlock-react/static/css/main.929d506e.css",
+    "main.js": "/sherlock-react/static/js/main.361d92c2.js",
     "static/js/787.81a6bda5.chunk.js": "/sherlock-react/static/js/787.81a6bda5.chunk.js",
+    "static/media/fa-solid-900.ttf": "/sherlock-react/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
     "static/media/Adapt-img@4x.webp": "/sherlock-react/static/media/Adapt-img@4x.bb14ccd014107825d408.webp",
+    "static/media/fa-brands-400.ttf": "/sherlock-react/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
+    "static/media/fa-solid-900.woff2": "/sherlock-react/static/media/fa-solid-900.41c0f706d8ce93933771.woff2",
+    "static/media/fa-brands-400.woff2": "/sherlock-react/static/media/fa-brands-400.3ac6859b28be946745f9.woff2",
     "static/media/Desktop-img@4x.webp": "/sherlock-react/static/media/Desktop-img@4x.690ad1659be43cb33273.webp",
     "static/media/Kollektif-Bold.ttf": "/sherlock-react/static/media/Kollektif-Bold.d97641da7b1897b8ee19.ttf",
     "static/media/Create-img@4x.webp": "/sherlock-react/static/media/Create-img@4x.aecbacbe20d39a99bfdb.webp",
     "static/media/illustration-home-PM@4x.webp": "/sherlock-react/static/media/illustration-home-PM@4x.8fd023d113ab08725c03.webp",
     "static/media/faces@4x.svg": "/sherlock-react/static/media/faces@4x.95962bb5a7dff03b0ad1c37c54b19c7d.svg",
     "static/media/Kollektif-BoldItalic.ttf": "/sherlock-react/static/media/Kollektif-BoldItalic.577d896c027c07a14345.ttf",
+    "static/media/fa-regular-400.ttf": "/sherlock-react/static/media/fa-regular-400.3cd9fb8fcec4ad0f99d4.ttf",
     "static/media/pipeline-img-1@4x.webp": "/sherlock-react/static/media/pipeline-img-1@4x.17ba220bd756592abc1a.webp",
     "static/media/Kollektif.ttf": "/sherlock-react/static/media/Kollektif.33fdfd1d0f21c0c8283b.ttf",
     "static/media/video@4x.webp": "/sherlock-react/static/media/video@4x.b91dec05464c4148a8e6.webp",
@@ -17,14 +22,17 @@
     "static/media/sherlock-logo@4x.png": "/sherlock-react/static/media/sherlock-logo@4x.c86bc1d18557c0d44cb3.png",
     "static/media/Kollektif-Italic.ttf": "/sherlock-react/static/media/Kollektif-Italic.0e7ef841e38b13bbac89.ttf",
     "static/media/pipeline-img-2@4x.webp": "/sherlock-react/static/media/pipeline-img-2@4x.4940dc48c0ac9876b717.webp",
+    "static/media/fa-regular-400.woff2": "/sherlock-react/static/media/fa-regular-400.1f3772178d9e5bed38a6.woff2",
     "static/media/sherlock-pipeline-logo@4x.webp": "/sherlock-react/static/media/sherlock-pipeline-logo@4x.b7d372121728e8631101.webp",
+    "static/media/fa-v4compatibility.ttf": "/sherlock-react/static/media/fa-v4compatibility.e314b618134d5be20996.ttf",
+    "static/media/fa-v4compatibility.woff2": "/sherlock-react/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
     "index.html": "/sherlock-react/index.html",
-    "main.a87f8b49.css.map": "/sherlock-react/static/css/main.a87f8b49.css.map",
-    "main.07918529.js.map": "/sherlock-react/static/js/main.07918529.js.map",
+    "main.929d506e.css.map": "/sherlock-react/static/css/main.929d506e.css.map",
+    "main.361d92c2.js.map": "/sherlock-react/static/js/main.361d92c2.js.map",
     "787.81a6bda5.chunk.js.map": "/sherlock-react/static/js/787.81a6bda5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a87f8b49.css",
-    "static/js/main.07918529.js"
+    "static/css/main.929d506e.css",
+    "static/js/main.361d92c2.js"
   ]
 }
