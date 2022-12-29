@@ -1,11 +1,13 @@
 import '../css/Button.scss'
 import PropTypes from 'prop-types'
 
+import { MDBBtn } from 'mdb-react-ui-kit';
+
 const Button = ({ Text , Color, Type, onClick}) => {
 
 
   return (
-    <button onClick={onClick} className={[Color, Type].join(' ')}>{Text}</button>
+    <MDBBtn onClick={onClick} className={[Color, Type].join(' ')}>{Text}</MDBBtn>
   )
 
 }

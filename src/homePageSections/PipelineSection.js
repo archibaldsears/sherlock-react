@@ -1,5 +1,6 @@
 import ImageTxtFullWidth from "../components/ImageTxtFullWidth";
 import "../css/PipelineSection.scss";
+import Button from "../components/Button";
 
 const PipelineSection = (props) => {
   // const PipelineCopy = [
@@ -12,7 +13,7 @@ const PipelineSection = (props) => {
   //   },
   // ]
   // const left = true;
-  // const righr = false;
+  // const right = false;
 
   return (
     <div className="Full-container">
@@ -27,7 +28,9 @@ const PipelineSection = (props) => {
               presents data and insights, and keeps everything in one place.
               Plus, it integrates with your own project management software.
             </p>
-            <button>Learn More</button>
+            <Button 
+              Text='hello'
+            />
           </div>
           <img src={props.pipelineImg1} alt="" />
         </div>

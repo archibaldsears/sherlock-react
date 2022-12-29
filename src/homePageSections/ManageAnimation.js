@@ -1,4 +1,6 @@
 import '../css/HomepageSection.scss'
+import Faces from './Faces'
+
 
 const ManageAnimation = ({faceImg}) => {
   return (
@@ -12,9 +14,7 @@ const ManageAnimation = ({faceImg}) => {
       <h2 className='fifth'>worldwide ad creation.</h2>
       <h2 className='sixth'>creative design</h2>
     </section>
-    <div className='Full-container faces'>
-        <img src={faceImg} alt="" />
-    </div>
+    <Faces img={faceImg} />
   </div>
   )
 }

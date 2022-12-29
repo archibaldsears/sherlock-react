@@ -9,6 +9,7 @@
   --orange-text: #F2A130;
   --red: #BF5946;
   --almostBlack: #64666A;
+  --backgroundOrange: #FEF7ED;
   
   transition: all 600ms ease-in-out;
   -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/

@@ -1,42 +1,46 @@
-import sherlockLogo from '../images/sherlock-logo@4x.png'
-import '../css/AppHeader.scss'
-import { Link } from 'react-router-dom'
+import sherlockLogo from "../images/sherlock-logo@4x.png";
+import "../css/AppHeader.scss";
+import { Link } from "react-router-dom";
 
-
-const Header = ({option1, option2, option3, option4, option5, option6}) => {
+const Header = ({
+  navOptions
+}) => {
   return (
     <div className="Main-container">
-    <header className="App-header paddingSH">
-      <Link to='/'>
-        <p>{option1}</p>
-      </Link>
+      <header className="App-header paddingSH">
+        <Link to="sherlock-react">
+          <p>{navOptions.nav1}</p>
+        </Link>
 
-      <Link to={'/' + option2}>
-        <p>{option2}</p>
-      </Link>
-    
-      <Link to={'/' + option3}>
-        <p>{option3}</p>
-      </Link>
-      <Link to='/'>
-        <img src={sherlockLogo} alt='Sherlock Logo' />
-      </Link>
-      <Link to={'/' + option4}>
-        <p>{option4}</p>
-      </Link>
-      <Link to={'/' + option5}>
-        <p>{option5}</p>
-      </Link>
-      <Link to={'/' + option6}>
-        <p>{option6}</p>
-      </Link>
-  </header>
-  </div>
-  )
-}
+        <Link to={navOptions.nav2}>
+          <p>{navOptions.nav2}</p>
+        </Link>
+
+        <Link to={navOptions.nav3}>
+          <p>{navOptions.nav3}</p>
+        </Link>
+        <Link to="sherlock-react">
+          <img src={sherlockLogo} alt="Sherlock Logo" />
+        </Link>
+        
+        <Link to={navOptions.nav4}>
+          <p>{navOptions.nav4}</p>
+        </Link>
+
+        <Link to={navOptions.nav5}>
+          <p>{navOptions.nav5}</p>
+        </Link>
+
+        <Link to={navOptions.nav6}>
+          <p>{navOptions.nav6}</p>
+        </Link>
+      </header>
+    </div>
+  );
+};
 
 Header.defaultProps = {
-    option1: 'arggg'
-}
+  option1: "arggg",
+};
 
-export default Header
+export default Header;
