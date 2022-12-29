@@ -36,7 +36,12 @@ import Pipelinepage from "./Pages/Pipelinepage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const NavigationOptions = [ {
-  
+    nav1:'Home',
+    nav2:'About',
+    nav3:'Pipeline',
+    nav4:'Work',
+    nav5:'Services',
+    nav6:'Contact'
   }
 ]
 
@@ -51,18 +56,22 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header
-          option1="Home"
-          option2="About"
-          option3="Pipeline"
-          option4="Work"
-          option5="Services"
-          option6="Contact"
+          option1={NavigationOptions.nav1}
+          option2={NavigationOptions.nav2}
+          option3={NavigationOptions.nav1}
+          option4={NavigationOptions.nav1}
+          option5={NavigationOptions.nav1}
+          option6={NavigationOptions.nav1}
         />
 
         <Routes>
           
           <Route path="pipeline" element={<Pipelinepage />} />
+
+          <Route path="/sherlock-react" element={<Homepage />} />
+
           <Route path="/*" element={<Homepage />} />
+          
         </Routes>
       </BrowserRouter>
     </div>
