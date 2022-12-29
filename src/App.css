@@ -16,6 +16,35 @@
 
 }
 
+
+
+
+
+
+@media (max-width: 1400px) {
+ :root {
+  font-size: 12px;
+ }
+}
+
+@media (max-width: 400px) {
+  :root {
+   font-size: 10px;
+  }
+ }
+
+
+@media (max-width: 991.98px) { 
+
+}
+
+
+@media (max-width: 1199.98px) { 
+
+
+
+}
+
 .orange-color-text {
   color: var(--orange-text);
 }
@@ -100,21 +129,4 @@ p {
 
 
 
-
-
-@media (max-width: 767.98px) {
-
- }
-
-
-@media (max-width: 991.98px) { 
-
- }
-
-
-@media (max-width: 1199.98px) { 
-
-
-
- }
 

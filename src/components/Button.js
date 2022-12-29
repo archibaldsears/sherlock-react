@@ -5,7 +5,7 @@ const Button = ({ Text , Color, Type, onClick}) => {
 
 
   return (
-    <button onClick={onClick} className={[Color, Type].join(' ')} >{Text}</button>
+    <button onClick={onClick} className={[Color, Type].join(' ')}>{Text}</button>
   )
 
 }
@@ -15,8 +15,8 @@ Button.defaultProps = {
   Color: 'Black',
   type: 'Outline'
 }
-
-Button.propTypes = {
+  
+  Button.propTypes = {
     Text: PropTypes.string,
     Color: PropTypes.string,
     Type: PropTypes.string,

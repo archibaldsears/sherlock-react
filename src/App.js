@@ -28,6 +28,12 @@ import VideoContainer from './homePageSections/VideoContainer';
 import PipelineSection from './homePageSections/PipelineSection';
 
 function App() {
+
+
+  // toggle click
+  const toggleClick = (id) => {
+    console.log(id)
+  }
   
   return (
     <div className="App">
