@@ -60,8 +60,8 @@ function App() {
         />
 
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/pipeline" element={<Pipelinepage />} />
+          <Route path="*" element={<Homepage />} />
+          <Route path="pipeline" element={<Pipelinepage />} />
         </Routes>
       </BrowserRouter>
     </div>
