@@ -35,6 +35,12 @@ import Pipelinepage from "./Pages/Pipelinepage";
 //react imports
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+const NavigationOptions = [ {
+  
+  }
+]
+
+
 function App() {
   // toggle click
   // const toggleClick = (id) => {
