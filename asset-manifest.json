@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sherlock-react/static/css/main.468d6fcf.css",
-    "main.js": "/sherlock-react/static/js/main.0479f83b.js",
+    "main.css": "/sherlock-react/static/css/main.591abca4.css",
+    "main.js": "/sherlock-react/static/js/main.dfb78cd0.js",
     "static/js/787.81a6bda5.chunk.js": "/sherlock-react/static/js/787.81a6bda5.chunk.js",
     "static/media/fa-solid-900.ttf": "/sherlock-react/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
     "static/media/Adapt-img@4x.webp": "/sherlock-react/static/media/Adapt-img@4x.bb14ccd014107825d408.webp",
@@ -27,12 +27,12 @@
     "static/media/fa-v4compatibility.ttf": "/sherlock-react/static/media/fa-v4compatibility.e314b618134d5be20996.ttf",
     "static/media/fa-v4compatibility.woff2": "/sherlock-react/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
     "index.html": "/sherlock-react/index.html",
-    "main.468d6fcf.css.map": "/sherlock-react/static/css/main.468d6fcf.css.map",
-    "main.0479f83b.js.map": "/sherlock-react/static/js/main.0479f83b.js.map",
+    "main.591abca4.css.map": "/sherlock-react/static/css/main.591abca4.css.map",
+    "main.dfb78cd0.js.map": "/sherlock-react/static/js/main.dfb78cd0.js.map",
     "787.81a6bda5.chunk.js.map": "/sherlock-react/static/js/787.81a6bda5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.468d6fcf.css",
-    "static/js/main.0479f83b.js"
+    "static/css/main.591abca4.css",
+    "static/js/main.dfb78cd0.js"
   ]
 }
