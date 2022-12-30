@@ -1,6 +1,5 @@
 import '../css/Button.scss'
 import PropTypes from 'prop-types'
-
 import { MDBBtn } from 'mdb-react-ui-kit';
 
 const Button = ({ Text , Color, Type, onClick}) => {
@@ -14,7 +13,7 @@ const Button = ({ Text , Color, Type, onClick}) => {
 
 Button.defaultProps = {
   Text: 'Learn More',
-  Color: 'Black',
+  Color: 'bg-primary',
   type: 'Outline'
 }
   

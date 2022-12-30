@@ -8,7 +8,7 @@ const Header = ({
   return (
     <div className="Main-container">
       <header className="App-header paddingSH">
-        <Link to="sherlock-react">
+        <Link to="sherlock-react" className="link-primary">
           <p>{navOptions.nav1}</p>
         </Link>
 

@@ -4,7 +4,7 @@ const CardItems = ({ card }) => {
   return (
     <div>
         <img src={card.image} alt="" />
-        <h3>{card.title}t</h3>
+        <h3>{card.title}</h3>
         <p>{card.copy}</p>
         <Button 
         Text={card.btnText}
