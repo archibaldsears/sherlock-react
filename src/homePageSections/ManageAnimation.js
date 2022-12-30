@@ -7,8 +7,8 @@ const ManageAnimation = ({faceImg}) => {
     <div className="Main-container">
     <section className='Section-one'>
       <h1>We manage your&nbsp;</h1> 
-      <h1 className='item first'>global brand delivery.</h1>
-      <h1 className='item second'>project data.</h1>
+      <h1 className='item first'>project data.</h1>
+      <h1 className='item second'>global brand delivery.</h1>
       <h1 className='item third'>creative localization.</h1>
       <h1 className='item fourth'>product launches.</h1>
       <h1 className='item fifth'>worldwide ad creation.</h1>
