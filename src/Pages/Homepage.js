@@ -22,6 +22,8 @@ const Homepage = () => {
   return (
     <div>
 
+    
+
     <ManageAnimation 
         faceImg={faceImg}
         title='We manage your'

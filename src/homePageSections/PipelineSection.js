@@ -2,6 +2,25 @@ import ImageTxtFullWidth from "../components/ImageTxtFullWidth";
 import "../css/PipelineSection.scss";
 import Button from "../components/Button";
 
+function PipelineHeader(props) {
+  return (
+    <div className="Pipeline-header">
+      <img src={props.pipelineImg2} alt="" />
+      <div>
+        <img className="Pipeline-logo" src={props.pipelineLogo} alt="" />
+        <p>
+          Our custom-built production management software is what sets us apart.
+          Pipeline automates key parts of your workflow, gathers and presents
+          data and insights, and keeps everything in one place. Plus, it
+          integrates with your own project management software.
+        </p>
+        <Button Text="hello" />
+      </div>
+      <img src={props.pipelineImg1} alt="" />
+    </div>
+  );
+}
+
 const PipelineSection = (props) => {
   // const PipelineCopy = [
   //   {
@@ -18,22 +37,11 @@ const PipelineSection = (props) => {
   return (
     <div className="Full-container">
       <section className="Pipeline-container">
-        <div className="Pipeline-header">
-          <img src={props.pipelineImg2} alt="" />
-          <div>
-            <img className="Pipeline-logo" src={props.pipelineLogo} alt="" />
-            <p>
-              Our custom-built production management software is what sets us
-              apart. Pipeline automates key parts of your workflow, gathers and
-              presents data and insights, and keeps everything in one place.
-              Plus, it integrates with your own project management software.
-            </p>
-            <Button 
-              Text='hello'
-            />
-          </div>
-          <img src={props.pipelineImg1} alt="" />
-        </div>
+        <PipelineHeader
+          pipelineImg2={props.pipelineImg2}
+          pipelineLogo={props.pipelineLogo}
+          pipelineImg1={props.pipelineImg1}
+        />
 
         <ImageTxtFullWidth
           image={props.createImg}
@@ -49,7 +57,8 @@ const PipelineSection = (props) => {
               We take your assets and reproduce them to any size, language,
               style, or device — however you want it, we can get it done.
             </p>
-            <button>See our work</button>
+            
+            <Button Text="See our work" />
           </div>
           <img src={props.adaptImg} alt="" />
         </div>
@@ -62,7 +71,7 @@ const PipelineSection = (props) => {
               produce original marketing assets, from responsive display ads to
               print brochures.
             </p>
-            <button>Try it out</button>
+            <Button Text="Try it out" />
           </div>
         </div>
       </section>
