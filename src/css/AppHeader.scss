@@ -26,18 +26,6 @@
       color: #64666A;
       animation: wordEntrance 700ms ease-out;
       animation-fill-mode: backwards;
-      
-      a:nth-child(5) {
-        animation-delay: calc(1 * var(--stagger-delay));
-      }
-    
-      a:nth-child(6) {
-        animation-delay: calc(2 * var(--stagger-delay));
-      }
-    
-      a:nth-child(7) {
-        animation-delay: calc(3 * var(--stagger-delay));
-      }
         p.active {
           color: red !important;
         }
@@ -47,6 +35,17 @@
       a:nth-child( #{$i} ) {
         animation-delay: calc($i * var(--stagger-delay));
       }
+    }
+
+
+    a:nth-child(5) {
+      animation-delay: calc(3 * var(--stagger-delay));
+    }
+    a:nth-child(6) {
+      animation-delay: calc(2 * var(--stagger-delay));
+    }
+    a:nth-child(7) {
+      animation-delay: calc(1 * var(--stagger-delay));
     }
 
     
