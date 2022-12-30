@@ -7,19 +7,19 @@ import "./fonts/Kollektif.ttf";
 import "./fonts/Kollektif-Italic.ttf";
 import "./fonts/Kollektif-BoldItalic.ttf";
 
-
 //react imports
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route }  from "react-router-dom";
 
 //components
-import Header from "./homePageSections/Header";
+import Header from "./components/Header";
 
 //pages
 import Homepage from "./Pages/Homepage";
 import Pipelinepage from "./Pages/Pipelinepage";
 import Aboutpage from "./Pages/Aboutpage";
-
+import Workpage from "./Pages/Workpage";
+import Servicespage from "./Pages/Servicespage";
+import Contactpage from "./Pages/Contactpage";
 
 const NavigationOptions = {
   nav1: "Home",
@@ -39,21 +39,19 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header
-          navOptions={NavigationOptions}
-        />
+
+        <Header navOptions={NavigationOptions} />
 
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="pipeline" element={<Pipelinepage />} />
           <Route path="about" element={<Aboutpage />} />
-
-
+          <Route path="work" element={<Workpage />} />
+          <Route path="services" element={<Servicespage />} />
+          <Route path="contact" element={<Contactpage />} />
           {/* for github pages */}
           <Route path="/sherlock-react" element={<Homepage />} />
           <Route path="/*" element={<Homepage />} />
-
-
         </Routes>
       </BrowserRouter>
     </div>

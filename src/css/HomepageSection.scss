@@ -30,7 +30,7 @@
     font-size: 3.5rem;
   }
 
-  h2 {
+  .item {
   align-items: left;
   text-align: left;
   font-size: 3.5rem;
@@ -39,7 +39,7 @@
   }
 
   @for $i from 1 through 7  {
-    h2:nth-child( #{$i} ) {
+    .item:nth-child( #{$i} ) {
       grid-area: opt + ($i - 1);
       animation: move- + ($i - 1) var(--animation-timing) linear;
       animation-timing-function: var(--animation-tween);

@@ -38,6 +38,9 @@
       a:nth-child(7) {
         animation-delay: calc(3 * var(--stagger-delay));
       }
+        p.active {
+          color: red !important;
+        }
     }
 
     @for $i from 1 through 3  {
