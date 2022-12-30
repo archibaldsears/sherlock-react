@@ -6,14 +6,14 @@ const Button = ({ Text , Color, Type, onClick}) => {
 
 
   return (
-    <MDBBtn onClick={onClick} className={[Color, Type].join(' ')}>{Text}</MDBBtn>
+    <MDBBtn color="primary" outline onClick={onClick} className={[Color, Type].join(' ') + 'btn-capitalize text-capitalize btn-lg'} >{Text}</MDBBtn>
   )
 
 }
 
 Button.defaultProps = {
   Text: 'Learn More',
-  Color: 'bg-primary',
+  Color: 'secondary',
   type: 'Outline'
 }
   

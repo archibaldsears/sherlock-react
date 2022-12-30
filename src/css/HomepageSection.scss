@@ -41,7 +41,7 @@
   @for $i from 1 through 7  {
     h2:nth-child( #{$i} ) {
       grid-area: opt + ($i - 1);
-      animation: 'move-'+ ($i - 1) var(--animation-timing) linear;
+      animation: move- + ($i - 1) var(--animation-timing) linear;
       animation-timing-function: var(--animation-tween);
       animation-delay: 2s;
       animation-fill-mode: forwards;
@@ -53,16 +53,6 @@
   }
 }
 
-
-
-
-   
-
-
-
-  
-  
-  
    .faces {
     position: relative ;
     
@@ -75,6 +65,12 @@
     //   top: 2rem;
     // }
   }
+
+
+
+
+
+  
   
   @keyframes move-1 {
     0% {
@@ -366,3 +362,7 @@
     z-index: 2  ;
   }
 }
+
+
+
+

@@ -15,6 +15,8 @@ import HomeStrengths from '../homePageSections/HomeStrengths';
 import VideoContainer from '../homePageSections/VideoContainer';
 import PipelineSection from '../homePageSections/PipelineSection';
 
+import '../css/HomepageSection.scss';
+import "../css/AppHeader.scss";
 
 const Homepage = () => {
   return (
