@@ -1,6 +1,8 @@
 const Pipelinepage = () => {
   return (
-    <div>Pipelinepage</div>
+    <div className="Main-container">
+      <h1>Powered by Pipeline</h1>
+    </div>
   )
 }
 

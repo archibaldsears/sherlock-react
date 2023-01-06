@@ -13,7 +13,7 @@ const Header = ({
   const clickFunction = (e) => {
     setBtnState(btnState => !btnState);
     // document.getElementsByClassName("header-text").classList.remove(' active');
-    if (!btnState) {e.currentTarget.classList.add('active')} else {e.currentTarget.classList.remove('active')}
+    // if (btnState) {e.currentTarget.classList.add('active')} else {e.currentTarget.classList.remove('active')}
   }
 
   

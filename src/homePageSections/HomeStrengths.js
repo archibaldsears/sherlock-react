@@ -2,10 +2,8 @@ import "../css/HomeStrengths.scss";
 import CardItems from "../components/CardItems";
 
 const HomeStrengths = ({ homeImg1, homeImg2, homeImg3 }) => {
-
   const onClick = () => {
     console.log("clicked from here!");
-    
   };
 
   const cardText = [
@@ -48,8 +46,7 @@ const HomeStrengths = ({ homeImg1, homeImg2, homeImg3 }) => {
     >
       <div className="Main-container paddingSH">
         <h1 className="Second-header">
-          With 10+ years in business and over 5 million assets delivered, we’ve
-          gotten pretty good at a few things. r/w
+        We’re a whole lot more than a translation company. (Although we’re very good at that, too.)
         </h1>
 
         <section className="Section-two paddingSH">

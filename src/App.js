@@ -20,6 +20,7 @@ import Aboutpage from "./Pages/Aboutpage";
 import Workpage from "./Pages/Workpage";
 import Servicespage from "./Pages/Servicespage";
 import Contactpage from "./Pages/Contactpage";
+import Footer from "./components/Footer";
 
 const NavigationOptions = {
   nav1: "Home",
@@ -53,6 +54,8 @@ function App() {
           <Route path="/sherlock-react" element={<Homepage />} />
           <Route path="/*" element={<Homepage />} />
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </div>
   );
