@@ -1,22 +1,19 @@
-import ImageTxtFullWidth from "../components/ImageTxtFullWidth";
-import "../css/PipelineSection.scss";
+import ImageTxtFullWidthLeft from "../components/ImageTxtFullWidthLeft";
 import Button from "../components/Button";
+import SectionHeaderHorizontal from "../components/SectionHeaderHorizontal";
+import ImgTxtFullWidthRight from "../components/ImgTxtFullWidthRight";
 
-function PipelineHeader(props) {
+import "../css/PipelineSection.scss";
+
+function PipelineManage(props) {
   return (
-    <div className="Pipeline-header">
-      <img src={props.pipelineImg2} alt="" />
+    <div className="Manage-container Full-container">
+      <img src={props.manageImg} alt="" />
       <div>
-        <img className="Pipeline-logo" src={props.pipelineLogo} alt="" />
-        <p>
-          Our custom-built production management software is what sets us apart.
-          Pipeline automates key parts of your workflow, gathers and presents
-          data and insights, and keeps everything in one place. Plus, it
-          integrates with your own project management software.
-        </p>
-        <Button Text="hello" />
+        <h3>{props.title}</h3>
+        <p>{props.text}</p>
+        <Button Text={props.btnText} />
       </div>
-      <img src={props.pipelineImg1} alt="" />
     </div>
   );
 }
@@ -36,44 +33,45 @@ const PipelineSection = (props) => {
 
   return (
     <div className="Full-container">
-      <section className="Pipeline-container">
-        <PipelineHeader
-          pipelineImg2={props.pipelineImg2}
-          pipelineLogo={props.pipelineLogo}
-          pipelineImg1={props.pipelineImg1}
+      <section className="Pipeline-container section-container">
+        <SectionHeaderHorizontal
+          Img2={props.pipelineImg2}
+          Logo={props.pipelineLogo}
+          Img1={props.pipelineImg1}
+          text="Our custom-built production management software is what sets us apart. Pipeline automates key parts of your workflow, gathers and presents data and insights, and keeps everything in one place. Plus, it integrates with your own project management software."
         />
 
-        <ImageTxtFullWidth
+        <ImageTxtFullWidthLeft
           image={props.createImg}
           title="Create."
           text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
           btnText="Try it out"
+          direction=""
         />
 
-        <div className="Adapt-container Full-container">
-          <div className="Main-container">
-            <h3>Adapt.</h3>
-            <p>
-              We take your assets and reproduce them to any size, language,
-              style, or device — however you want it, we can get it done.
-            </p>
-            
-            <Button Text="See our work" />
-          </div>
-          <img src={props.adaptImg} alt="" />
-        </div>
-        <div className="Manage-container Full-container">
-          <img src={props.manageImg} alt="" />
-          <div>
-            <h3>Manage.</h3>
-            <p>
-              We become experts in your brand, and love to work with you to
-              produce original marketing assets, from responsive display ads to
-              print brochures.
-            </p>
-            <Button Text="Try it out" />
-          </div>
-        </div>
+        <ImgTxtFullWidthRight
+          adaptImg={props.adaptImg}
+          title="Create."
+          text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
+          btnText="Try it out"
+          direction=""
+        />
+
+        <ImageTxtFullWidthLeft
+          image={props.createImg}
+          title="Create."
+          text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
+          btnText="Try it out"
+          direction=""
+        />
+
+        <PipelineManage
+          manageImg={props.manageImg}
+          title="Create."
+          text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
+          btnText="Try it out"
+          direction=""
+        />
       </section>
     </div>
   );

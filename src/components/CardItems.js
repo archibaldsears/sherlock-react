@@ -11,7 +11,7 @@ const CardItems = ({ card }) => {
         Color={card.btnColor}
         Type={card.type}
         onClick={card.BtnOnclick}
-        />
+        /> 
   </div>
   )
 }

@@ -4,111 +4,103 @@
     display: grid;
     overflow: visible;
     grid-template-columns: 1fr;
-  }
-  
-  
-  .Pipeline-container p {
-    font-size: 1.5rem;
-    font-weight: 100;
-    line-height: 128%;
-    padding-bottom: 1rem;
-  }
-  .Pipeline-container .Pipeline-logo {
-    padding-bottom: 2rem;
-  }
-  
-  .Pipeline-container h3 {
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 128%;
-    text-align: left;
-    margin: 0;
-    padding-bottom: 0.5rem;
-  }
-  
-  .Pipeline-container img {
-    width: 100%;
-  }
-  
-  .Pipeline-header {
-    display: grid;
-    gap: 4rem;
-    grid-template-columns: 3fr 4fr 5fr;
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 4rem;
-  }
-  
-  
-  .Pipeline-container .Create-container {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 2fr 4fr 3fr 1fr;
-    align-items: center;
-    max-width: 1600px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 4rem 0;
-  }
-  
-  .Pipeline-container .Create-container img {
-    /* justify-self: end;
-    align-self: end; */
-    grid-column: 1 / span 2;
-    padding-left: 2rem;
+    p {
+      font-size: 1.5rem;
+      font-weight: 100;
+      line-height: 128%;
+      padding-bottom: 1rem;
+    }
+    .Pipeline-logo {
+      padding-bottom: 2rem;
+    }
+    h3 {
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 128%;
+      text-align: left;
+      margin: 0;
+      padding-bottom: 0.5rem;
+    }
+    img {
+      width: 100%;
+    }
+
+    .section-header-horizontal {
+      display: grid;
+      gap: 4rem;
+      grid-template-columns: 3fr 4fr 5fr;
+      justify-items: center;
+      align-items: center;
+      padding-bottom: 4rem;
+    }
     
+    .img-left-textImg-container {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 2fr 4fr 3fr 1fr;
+      align-items: center;
+      max-width: 1600px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 4rem 0;
+      img {
+        /* justify-self: end;
+        align-self: end; */
+        grid-column: 1 / span 2;
+        padding-left: 2rem;
+        
+      }
+      p {
+        padding-bottom: 1rem;
+        margin-right: 2rem;
+      }
+    }
+
+    .Adapt-container {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr 3fr 4fr 2fr;
+      max-width: 1600px;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 0;
+      div {
+        grid-column: 2 / span 1;
+      }
+      img {
+        grid-column: 3 / span 2;
+        padding-right: 2rem;
+      }
+      
+    }
+    .Manage-container {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 2fr 4fr 3fr 1fr;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      p {
+        margin-right: 2rem;
+      }
+      img {
+        grid-column: 1 / span 2;
+      }
+      
+    }
   }
+  
   .Pipeline-container .Create-container div, .Pipeline-container .Adapt-container div  {
     max-width: 400px;
   }
   
-  
-  
-  .Pipeline-container .Create-container p {
-    padding-bottom: 1rem;
-    margin-right: 2rem;
-  }
-  
-  
-  
-  .Pipeline-container .Adapt-container {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 3fr 4fr 2fr;
-    max-width: 1600px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 0;
-  }
-  
-  .Pipeline-container .Adapt-container div {
-    grid-column: 2 / span 1;
-  }
+
+
 
   
-  .Pipeline-container .Adapt-container img {
-    grid-column: 3 / span 2;
-    padding-right: 2rem;
-  }
   
-  .Pipeline-container .Manage-container {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 2fr 4fr 3fr 1fr;
-    align-items: center;
-    justify-content: center;
-    overflow: visible;
-  }
-
-  .Pipeline-container .Manage-container p {
-    margin-right: 2rem;
-  }
-  
-  .Pipeline-container .Manage-container img {
-    grid-column: 1 / span 2;
-  }
-  
+ 
 
 @media (max-width: 1000px) {
 
