@@ -13,7 +13,7 @@ const CreateDragDrop = (props) => {
           <motion.img
             drag
             dragMomentum={false}
-            dragConstraints={{ top: 0, left: -150, right: 300, bottom: 500 }}
+            dragConstraints={{ top: 0, left: -150, right: 300, bottom: 400 }}
             whileDrag={{ opacity: 0.8, scale: 1 }}
             dragElastic={0.1}
             src={props.image3}
@@ -23,10 +23,10 @@ const CreateDragDrop = (props) => {
           <motion.img
             drag
             dragMomentum={false}
-            dragConstraints={{ top: -180, left: -150, right: 300, bottom: 500 }}
+            dragConstraints={{ top: -180, left: -150, right: 300, bottom: 200 }}
             whileDrag={{ opacity: 0.8, scale: 1 }}
             dragElastic={0.1}
-            src={props.image3}
+            src={props.image4}
             whileHover={{ scale: 1.05 }}
             alt=""
           />

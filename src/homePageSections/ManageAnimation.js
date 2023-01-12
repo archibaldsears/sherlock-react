@@ -11,37 +11,30 @@ const ManageAnimation = ({ faceImg }) => {
     {
       id: 1,
       text: "project data.",
-      className: "first",
     },
     {
       id: 2,
       text: "global brand delivery.",
-      className: "second",
     },
     {
       id: 3,
       text: "asset translation.",
-      className: "third",
     },
     {
       id: 4,
       text: "creative localization.",
-      className: "fourth",
     },
     {
       id: 5,
       text: "product launches.",
-      className: "fifth",
     },
     {
       id: 6,
       text: "worldwide ad creation.",
-      className: "sixth",
     },
     {
       id:7,
       text: "creative design.",
-      className: "seventh"
     }
   ];
 
