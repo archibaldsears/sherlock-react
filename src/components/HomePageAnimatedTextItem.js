@@ -33,8 +33,8 @@ function HomepageMotionItem(props) {
 const HomePageAnimatedTextItem = ({ item }) => {
   const opacity1 = 0.5;
   const opacity2 = 1;
-  const opacity3 = 0.7;
-  const opacity4 = 0.5;
+  const opacity3 = 0.5;
+  const opacity4 = 0.4;
   const opacity5 = 0.3;
   const opacity6 = 0.2;
 
@@ -223,6 +223,8 @@ const HomePageAnimatedTextItem = ({ item }) => {
     opacity4,
     opacity5,
   ];
+
+
   let opacityItem6 = [
     opacity6,
     opacity6,
