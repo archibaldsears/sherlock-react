@@ -5,26 +5,32 @@ import { Link } from "react-router-dom";
 function HomepageMotionItem(props) {
   return (
     <motion.h1
-      layout
+      
       animate={{
         y: props.optionMovement,
-        opacity: props.opacityItem,
+        // opacity: props.opacityItem,
       }}
       transition={{
-        duration: 28,
-        type: "spring",
-        stiffness: 1,
-        // ease: "easeInOut",
+        duration: 20,
         repeat: Infinity,
-        // repeatDelay: 1,
+        ease: [1, 0.2, 0.7, 0.95]
       }}
       whileHover={{}}
       className={"item " + props.item.className}
     >
       <Link to="/work">
-        <button>
+        <motion.button
+      animate={{
+        opacity: props.opacityItem,
+      }}
+      transition={{
+        duration: 20,
+        repeat: Infinity,
+        ease: [0.1, 0.1,0.1, 0.1]
+      }}
+        >
           {props.item.text}
-        </button>
+        </motion.button>
       </Link>
     </motion.h1>
   );
