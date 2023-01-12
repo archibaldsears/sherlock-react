@@ -38,7 +38,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
   const opacity4 = 0.4;
   const opacity5 = 0.3;
   const opacity6 = 0.2;
-  const opacity7 = 0.0;
 
 
   let positions = {

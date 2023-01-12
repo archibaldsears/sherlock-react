@@ -20,7 +20,7 @@ const ManageAnimation = ({ faceImg }) => {
     },
     {
       id: 3,
-      text: "app and website translation.",
+      text: "asset translation.",
       className: "third",
     },
     {
