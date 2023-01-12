@@ -1,6 +1,6 @@
 import "../css/HomeStrengths.scss";
 import CardItems from "../components/CardItems";
-
+import { motion } from "framer-motion";
 const HomeStrengths = ({ homeImg1, homeImg2, homeImg3 }) => {
   const onClick = () => {
     console.log("clicked from here!");
@@ -45,13 +45,30 @@ const HomeStrengths = ({ homeImg1, homeImg2, homeImg3 }) => {
       style={{ backgroundColor: "white", position: "relative", zIndex: "2" }}
     >
       <div className="Main-container paddingSH">
-        <h1 className="Second-header">
-        We’re a whole lot more than a translation company. (Although we’re very good at that, too.)
-        </h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            duration: 1,
+          }}
+          className="Second-header"
+        >
+          We’re a whole lot more than a translation company. (Although we’re
+          very good at that, too.)
+        </motion.h1>
 
         <section className="Section-two paddingSH">
           {cardText.map((card) => (
-            <CardItems key={card.id} card={card} />
+            <motion.div 
+              key={card.id}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                duration: 1,
+               }}
+            >
+              <CardItems key={card.id} card={card} />
+            </motion.div>
           ))}
         </section>
       </div>

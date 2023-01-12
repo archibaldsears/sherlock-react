@@ -10,6 +10,10 @@ import createImg from '../images/Create-img@4x.webp'
 import adaptImg from '../images/Adapt-img@4x.webp'
 import manageImg from '../images/Desktop-img@4x.webp'
 
+import mandoBg from '../images/mando-bg@4x.png'
+import mandolanguage1 from '../images/mandolanguage1@4x.png'
+import mandolanguage2 from '../images/mandolanguage2@4x.png'
+
 import ManageAnimation from '../homePageSections/ManageAnimation';
 import HomeStrengths from '../homePageSections/HomeStrengths';
 import VideoContainer from '../homePageSections/VideoContainer';
@@ -45,6 +49,9 @@ const Homepage = () => {
         pipelineImg2={pipelineImg2}
         pipelineLogo={pipelineLogo}
         createImg={createImg}
+        createImg2={mandoBg}
+        createImg3={mandolanguage1}
+        createImg4={mandolanguage2}
         adaptImg={adaptImg}
         manageImg={manageImg}
     />

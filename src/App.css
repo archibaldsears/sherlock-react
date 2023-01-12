@@ -11,7 +11,7 @@
   --almostBlack: #64666A;
   --backgroundOrange: #FEF7ED;
   
-  transition: all 600ms ease-in-out;
+  /* transition: all 400ms ease-in-out; */
   -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
 -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
 
@@ -95,7 +95,7 @@ h3 {
 
 body {
   width: 100%;
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 p {

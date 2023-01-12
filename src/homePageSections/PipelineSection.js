@@ -2,6 +2,8 @@ import ImageTxtFullWidthLeft from "../components/ImageTxtFullWidthLeft";
 import Button from "../components/Button";
 import SectionHeaderHorizontal from "../components/SectionHeaderHorizontal";
 import ImgTxtFullWidthRight from "../components/ImgTxtFullWidthRight";
+import CreateDragDrop from "./CreateDragDrop";
+
 
 import "../css/PipelineSection.scss";
 
@@ -41,13 +43,23 @@ const PipelineSection = (props) => {
           text="Our custom-built production management software is what sets us apart. Pipeline automates key parts of your workflow, gathers and presents data and insights, and keeps everything in one place. Plus, it integrates with your own project management software."
         />
 
-        <ImageTxtFullWidthLeft
+        <CreateDragDrop
+          image={props.createImg}
+          image2={props.createImg2}
+          image3={props.createImg3}
+          image4={props.createImg4}
+          title="Create."
+          text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
+          btnText="Try it out"
+          />
+
+        {/* <ImageTxtFullWidthLeft
           image={props.createImg}
           title="Create."
           text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
           btnText="Try it out"
           direction=""
-        />
+        /> */}
 
         <ImgTxtFullWidthRight
           adaptImg={props.adaptImg}
@@ -57,13 +69,6 @@ const PipelineSection = (props) => {
           direction=""
         />
 
-        <ImageTxtFullWidthLeft
-          image={props.createImg}
-          title="Create."
-          text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
-          btnText="Try it out"
-          direction=""
-        />
 
         <PipelineManage
           manageImg={props.manageImg}
@@ -72,6 +77,17 @@ const PipelineSection = (props) => {
           btnText="Try it out"
           direction=""
         />
+
+        <div className="deliver-container Main-container">
+          <div className="row-area">
+          <h3 className="red-color-text ">Deliver</h3>
+	        <p>We develop automated delivery processes, including automatic file naming and sizing, so your project can be completed at the literal click of a button.</p>
+          
+          </div>
+
+
+          
+        </div>
       </section>
     </div>
   );
