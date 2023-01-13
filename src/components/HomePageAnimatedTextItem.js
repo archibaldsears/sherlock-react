@@ -109,7 +109,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
     positions.position1,
     
   ];
-
   let option3Movement = [
     positions.position1,
     positions.position1,
@@ -135,7 +134,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
 
     positions.position1,
   ];
-
   let option4Movement = [
     positions.position1,
     positions.position1,
@@ -164,7 +162,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
 
     positions.position1,
   ];
-
   let option5Movement = [
 
 
@@ -220,7 +217,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
 
     positions.position1,
   ];
-
   let option7Movement = [
     positions.position1,
     positions.position1,
@@ -246,7 +242,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
 
     positions.position1,
   ];
-
   let opacityItem1 = [
     opacity0,
     opacity1,
@@ -272,7 +267,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
     opacity0,
 
   ];
-
   let opacityItem2 = [
     opacity2,
     opacity2,
@@ -299,7 +293,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
     opacity2,
 
   ];
-
   let opacityItem3 = [
     opacity3,
     opacity3,
@@ -325,7 +318,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
 
     opacity3,
   ];
-
   let opacityItem4 = [
     opacity4,
     opacity4,
@@ -350,7 +342,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
 
     opacity4,
   ];
-
   let opacityItem5 = [
     opacity5,
     opacity5,
@@ -375,8 +366,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
 
     opacity5,
   ];
-
-
   let opacityItem6 = [
     opacity6,
     opacity6,
@@ -401,7 +390,6 @@ const HomePageAnimatedTextItem = ({ item }) => {
 
     opacity6,
   ];
-
   let opacityItem7 = [
 
 

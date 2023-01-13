@@ -39,15 +39,15 @@ const ManageAnimation = ({ faceImg }) => {
   ];
 
   return (
-    <motion.div  className="Main-container">
-      <section className="Section-one">
+    <motion.div  className="Main-container container">
+      <section className="Section-one row">
         <motion.h1  initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }} 
                     viewport={{ once: true }} 
-                    className="title-static">
+                    className="title-static col-6">
                     We manage your&nbsp;
         </motion.h1>
-        <div className="itemContainer">
+        <div className="itemContainer col-6">
           {items.map((item) => (
             <HomePageAnimatedTextItem key={item.id} item={item}></HomePageAnimatedTextItem>
           ))}

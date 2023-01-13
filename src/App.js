@@ -22,6 +22,10 @@ import Servicespage from "./Pages/Servicespage";
 import Contactpage from "./Pages/Contactpage";
 import Footer from "./components/Footer";
 
+//material components
+import CenteredText from "./materialComponents/twoColumns/CenteredText.js";
+import MaterialNavbar from "./materialComponents/navbar/MaterialNavbar.js";
+
 const NavigationOptions = {
   nav1: "Home",
   nav2: "About",
@@ -40,8 +44,11 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <MaterialNavbar>hiya</MaterialNavbar>
+        {/* <Header navOptions={NavigationOptions} /> */}
 
-        <Header navOptions={NavigationOptions} />
+        <CenteredText />
+
 
         <Routes>
           <Route path="/" element={<Homepage />} />
