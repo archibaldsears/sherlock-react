@@ -11,7 +11,7 @@ import "./fonts/Kollektif-BoldItalic.ttf";
 import { BrowserRouter, Routes, Route }  from "react-router-dom";
 
 //components
-import Header from "./components/Header";
+// import Header from "./components/Header";
 
 //pages
 import Homepage from "./Pages/Homepage";
@@ -23,7 +23,7 @@ import Contactpage from "./Pages/Contactpage";
 import Footer from "./components/Footer";
 
 //material components
-import CenteredText from "./materialComponents/twoColumns/CenteredText.js";
+// import CenteredText from "./materialComponents/twoColumns/CenteredText.js";
 import MaterialNavbar from "./materialComponents/navbar/MaterialNavbar.js";
 
 const NavigationOptions = {

@@ -43,6 +43,12 @@ $line-spacing: 5rem;
     }
   }
 
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
   .item-container {
     display: flex;
     text-align: left;
@@ -51,11 +57,11 @@ $line-spacing: 5rem;
   .item button{
   align-items: left;
   text-align: left;
-  font-size: 3.5rem;
   color: var(--red);
   display: flex;
   flex-direction: column;
   }
+
 
   // @for $i from 1 through 7  {
   //   .item:nth-child( #{$i} ) {
