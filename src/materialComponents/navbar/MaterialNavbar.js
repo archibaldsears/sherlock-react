@@ -25,13 +25,13 @@ import "../../css/MaterialNavbar.scss";
 
 const MaterialNavbar = () => {
   const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false)
-  const [showNavCentred, setShowNavCentred] = useState(false);
-  let text = {
-    nav1: "Home",
-    nav2: "about",
-    nav3: "about",
-    nav4: ""
-  }
+  // const [showNavCentred, setShowNavCentred] = useState(false);
+  // let text = {
+  //   nav1: "Home",
+  //   nav2: "about",
+  //   nav3: "about",
+  //   nav4: ""
+  // }
 
 
 

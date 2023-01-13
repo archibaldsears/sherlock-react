@@ -26,14 +26,14 @@ import Footer from "./components/Footer";
 // import CenteredText from "./materialComponents/twoColumns/CenteredText.js";
 import MaterialNavbar from "./materialComponents/navbar/MaterialNavbar.js";
 
-const NavigationOptions = {
-  nav1: "Home",
-  nav2: "About",
-  nav3: "Pipeline",
-  nav4: "Work",
-  nav5: "Services",
-  nav6: "Contact",
-};
+// const NavigationOptions = {
+//   nav1: "Home",
+//   nav2: "About",
+//   nav3: "Pipeline",
+//   nav4: "Work",
+//   nav5: "Services",
+//   nav6: "Contact",
+// };
 
 function App() {
   // toggle click

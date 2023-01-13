@@ -1,4 +1,4 @@
-import ImageTxtFullWidthLeft from "../components/ImageTxtFullWidthLeft";
+// import ImageTxtFullWidthLeft from "../components/ImageTxtFullWidthLeft";
 import Button from "../components/Button";
 import SectionHeaderHorizontal from "../components/SectionHeaderHorizontal";
 import ImgTxtFullWidthRight from "../components/ImgTxtFullWidthRight";
