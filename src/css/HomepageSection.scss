@@ -49,6 +49,12 @@ $line-spacing: 5rem;
     }
   }
 
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
   .item-container {
     display: flex;
     text-align: left;
