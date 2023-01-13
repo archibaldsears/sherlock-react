@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   MDBNavbar,
   MDBContainer,
@@ -15,16 +14,13 @@ import {
   MDBDropdown,
   MDBDropdownItem,
   MDBDropdownToggle,
-  MDBDropdownMenu
-  
-} from 'mdb-react-ui-kit';
+  MDBDropdownMenu,
+} from "mdb-react-ui-kit";
 
 import "../../css/MaterialNavbar.scss";
 
-
-
 const MaterialNavbar = () => {
-  const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false)
+  const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
   // const [showNavCentred, setShowNavCentred] = useState(false);
   // let text = {
   //   nav1: "Home",
@@ -33,37 +29,32 @@ const MaterialNavbar = () => {
   //   nav4: ""
   // }
 
-
-
   return (
     <>
-      <MDBNavbar className='navbar-custom ' sticky expand='lg' light bgColor='light'>
+      <MDBNavbar className="navbar-custom " expand="lg" light bgColor="light">
         <MDBContainer>
-          <MDBNavbarBrand href='#'>Navbar</MDBNavbarBrand>
+          <MDBNavbarBrand href="#">Navbar</MDBNavbarBrand>
           <MDBNavbarToggler
-            type='button'
-            data-target='#navbarTogglerDemo02'
-            aria-controls='navbarTogglerDemo02'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
+            type="button"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
             onClick={() => setShowNavNoTogglerSecond(!showNavNoTogglerSecond)}
           >
-            <MDBIcon icon='bars' fas />
+            <MDBIcon icon="bars" fas />
           </MDBNavbarToggler>
-          <MDBCollapse navbar  show={showNavNoTogglerSecond}>
-            <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
-
-            
+          <MDBCollapse navbar show={showNavNoTogglerSecond}>
+            <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current='page' href='#'>
+                <MDBNavbarLink active aria-current="page" href="#">
                   Home
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
-
               <MDBNavbarItem>
                 <MDBDropdown>
-                  <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                  <MDBDropdownToggle tag="a" className="nav-link" role="button">
                     About
                   </MDBDropdownToggle>
                   <MDBDropdownMenu>
@@ -74,42 +65,49 @@ const MaterialNavbar = () => {
                 </MDBDropdown>
               </MDBNavbarItem>
 
-        
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current='page' href='#'>
+                <MDBNavbarLink active aria-current="page" href="#">
                   Pipeline
                 </MDBNavbarLink>
-
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Work</MDBNavbarLink>
+                <MDBNavbarLink href="#">Work</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current='page' href='#'>
+                <MDBNavbarLink active aria-current="page" href="#">
                   Services
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current='page' href='#'>
+                <MDBNavbarLink active aria-current="page" href="#">
                   Contact
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
+                <MDBNavbarLink
+                  disabled
+                  href="#"
+                  tabIndex={-1}
+                  aria-disabled="true"
+                >
                   Disabled
                 </MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
-            <MDBInputGroup tag="form" className='d-flex w-auto'>
-              <input className='form-control' placeholder="Type query" aria-label="Search" type='Search' />
+            <MDBInputGroup tag="form" className="d-flex w-auto">
+              <input
+                className="form-control"
+                placeholder="Type query"
+                aria-label="Search"
+                type="Search"
+              />
               <MDBBtn outline>Search</MDBBtn>
             </MDBInputGroup>
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
-    
     </>
   );
 };
 
-export default MaterialNavbar
+export default MaterialNavbar;
