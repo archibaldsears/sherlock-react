@@ -31,7 +31,7 @@ const MaterialNavbar = () => {
 
   return (
     <>
-      <MDBNavbar className="navbar-custom " expand="lg" light bgColor="light">
+      <MDBNavbar className="navbar-custom py-4" expand="lg" light bgColor="light">
         <MDBContainer>
           <MDBNavbarBrand href="#">Navbar</MDBNavbarBrand>
           <MDBNavbarToggler
