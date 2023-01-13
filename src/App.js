@@ -44,10 +44,10 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <MaterialNavbar>hiya</MaterialNavbar>
+        <MaterialNavbar/>
         {/* <Header navOptions={NavigationOptions} /> */}
 
-        <CenteredText />
+        {/* <CenteredText /> */}
 
 
         <Routes>

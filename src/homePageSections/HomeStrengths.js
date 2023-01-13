@@ -44,7 +44,7 @@ const HomeStrengths = ({ homeImg1, homeImg2, homeImg3 }) => {
       className="Full-container"
       style={{ backgroundColor: "white", position: "relative", zIndex: "2" }}
     >
-      <div className="Main-container paddingSH">
+      <div className="container ">
         <motion.h1
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

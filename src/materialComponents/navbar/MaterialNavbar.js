@@ -1,90 +1,115 @@
+
 import React, { useState } from 'react';
 import {
   MDBNavbar,
-  MDBNavbarNav,
+  MDBContainer,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
   MDBNavbarItem,
   MDBNavbarLink,
-  MDBNavbarToggler,
-  MDBContainer,
-  MDBIcon,
+  MDBCollapse,
   MDBBtn,
-  MDBCollapse
+  MDBIcon,
+  MDBNavbarNav,
+  MDBInputGroup,
+  MDBDropdown,
+  MDBDropdownItem,
+  MDBDropdownToggle,
+  MDBDropdownMenu
+  
 } from 'mdb-react-ui-kit';
 
+import "../../css/MaterialNavbar.scss";
+
+
+
 const MaterialNavbar = () => {
-    const [showBasic, setShowBasic] = useState(false);
+  const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false)
+  const [showNavCentred, setShowNavCentred] = useState(false);
+  let text = {
+    nav1: "Home",
+    nav2: "about",
+    nav3: "about",
+    nav4: ""
+  }
+
+
+
   return (
     <>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-   
-    <div class="container-fluid">
-     
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarCenteredExample"
-        aria-controls="navbarCenteredExample"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-  
-     
-      <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarCenteredExample"
-      >
-       
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-         
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-           
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item" href="#">Action</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Another action</a>
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled"
-              >Disabled</a
-            >
-          </li>
-        </ul>
-       
-      </div>
-     
-    </div>
-   
-  </nav>
-    </>
+      <MDBNavbar className='navbar-custom ' sticky expand='lg' light bgColor='light'>
+        <MDBContainer>
+          <MDBNavbarBrand href='#'>Navbar</MDBNavbarBrand>
+          <MDBNavbarToggler
+            type='button'
+            data-target='#navbarTogglerDemo02'
+            aria-controls='navbarTogglerDemo02'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+            onClick={() => setShowNavNoTogglerSecond(!showNavNoTogglerSecond)}
+          >
+            <MDBIcon icon='bars' fas />
+          </MDBNavbarToggler>
+          <MDBCollapse navbar  show={showNavNoTogglerSecond}>
+            <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
 
-  )
-}
+            
+              <MDBNavbarItem>
+                <MDBNavbarLink active aria-current='page' href='#'>
+                  Home
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+
+
+              <MDBNavbarItem>
+                <MDBDropdown>
+                  <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                    About
+                  </MDBDropdownToggle>
+                  <MDBDropdownMenu>
+                    <MDBDropdownItem link>Option 1</MDBDropdownItem>
+                    <MDBDropdownItem link>Another action</MDBDropdownItem>
+                    <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              </MDBNavbarItem>
+
+        
+              <MDBNavbarItem>
+                <MDBNavbarLink active aria-current='page' href='#'>
+                  Pipeline
+                </MDBNavbarLink>
+
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href='#'>Work</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink active aria-current='page' href='#'>
+                  Services
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink active aria-current='page' href='#'>
+                  Contact
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
+                  Disabled
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+            </MDBNavbarNav>
+            <MDBInputGroup tag="form" className='d-flex w-auto'>
+              <input className='form-control' placeholder="Type query" aria-label="Search" type='Search' />
+              <MDBBtn outline>Search</MDBBtn>
+            </MDBInputGroup>
+          </MDBCollapse>
+        </MDBContainer>
+      </MDBNavbar>
+    
+    </>
+  );
+};
 
 export default MaterialNavbar

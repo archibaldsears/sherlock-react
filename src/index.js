@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './bootstrap/index.scss';
+import './css/nomalize.css';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './css/nomalize.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

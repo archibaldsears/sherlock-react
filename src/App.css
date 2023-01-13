@@ -14,14 +14,32 @@
   /* transition: all 400ms ease-in-out; */
   -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
 -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
-
+  font-size: 22px;
 }
+@media (max-width: 2200px) {
+  :root {
+   font-size: 20px;
+  }
+ }
+
+@media (max-width: 2000px) {
+  :root {
+   font-size: 18px;
+  }
+ }
+
+@media (max-width: 1800px) {
+  :root {
+   font-size: 16px;
+  }
+ }
 
 
-
-
-
-
+@media (max-width: 1600px) {
+ :root {
+  font-size: 14px;
+ }
+}
 
 
 @media (max-width: 1400px) {
@@ -30,21 +48,28 @@
  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   :root {
    font-size: 10px;
   }
  }
 
 
-@media (max-width: 991.98px) { 
-
+@media (max-width: 700px) { 
+  :root {
+    font-size: 9px;
+   }
 }
 
 
-@media (max-width: 1199.98px) { 
+@media (max-width: 500px) { 
 
 
+    :root {
+      font-size: 8px;
+     }
+
+  
 
 }
 
@@ -103,7 +128,7 @@ p {
 }
 
 .Main-container {
-  max-width: 1600px;
+  max-width: 2200px;
   margin: 0 auto;
   overflow: hidden;
 }

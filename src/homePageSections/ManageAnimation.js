@@ -5,8 +5,6 @@ import HomePageAnimatedTextItem from "../components/HomePageAnimatedTextItem";
 import { motion } from "framer-motion";
 
 const ManageAnimation = ({ faceImg }) => {
-
-
   const items = [
     {
       id: 1,
@@ -14,7 +12,7 @@ const ManageAnimation = ({ faceImg }) => {
     },
     {
       id: 2,
-      text: "global brand delivery.",
+      text: "brand delivery.",
     },
     {
       id: 3,
@@ -22,7 +20,7 @@ const ManageAnimation = ({ faceImg }) => {
     },
     {
       id: 4,
-      text: "creative localization.",
+      text: "creative projects.",
     },
     {
       id: 5,
@@ -30,26 +28,31 @@ const ManageAnimation = ({ faceImg }) => {
     },
     {
       id: 6,
-      text: "worldwide ad creation.",
+      text: "ad creation.",
     },
     {
-      id:7,
+      id: 7,
       text: "creative design.",
-    }
+    },
   ];
 
   return (
-    <motion.div  className="Main-container container">
+    <motion.div className="Main-container container">
       <section className="Section-one row">
-        <motion.h1  initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }} 
-                    viewport={{ once: true }} 
-                    className="title-static col-6">
-                    We manage your&nbsp;
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="title-static col-6 p-0"
+        >
+          We manage your&nbsp;
         </motion.h1>
-        <div className="itemContainer col-6">
+        <div className="itemContainer col-6 p-0">
           {items.map((item) => (
-            <HomePageAnimatedTextItem key={item.id} item={item}></HomePageAnimatedTextItem>
+            <HomePageAnimatedTextItem
+              key={item.id}
+              item={item}
+            ></HomePageAnimatedTextItem>
           ))}
         </div>
       </section>
