@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import { motion } from "framer-motion";
-import { Resizable, ResizableBox } from "react-resizable";
-import { MDBContainer, MDBRow } from "mdb-react-ui-kit";
+import {  ResizableBox } from "react-resizable";
+// import { MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import "../css/DragDrop.scss";
 
-const MyHandle = React.forwardRef((props, ref) => {
-  const { handleAxis, ...restProps } = props;
-  return (
-    <div ref={ref} className={`foo handle-${handleAxis}`} {...restProps} />
-  );
-});
+// const MyHandle = React.forwardRef((props, ref) => {
+//   const { handleAxis, ...restProps } = props;
+//   return (
+//     <div ref={ref} className={`foo handle-${handleAxis}`} {...restProps} />
+//   );
+// });
 
 const CreateDragDrop = (props) => {
   const [shouldDrag1BeEnabled, setDrag1Enable] = useState(false);
@@ -52,6 +52,8 @@ const CreateDragDrop = (props) => {
                 }}
             />
           </ResizableBox>
+
+
         </motion.div>
         <motion.div
           drag
