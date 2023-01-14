@@ -6,6 +6,7 @@ import CreateDragDrop from "./CreateDragDrop";
 
 
 import "../css/PipelineSection.scss";
+import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 
 function PipelineManage(props) {
   return (
@@ -34,7 +35,7 @@ const PipelineSection = (props) => {
   // const right = false;
 
   return (
-    <div className="Full-container">
+    <MDBContainer fluid className="p-0 m-0">
       <section className="Pipeline-container section-container">
         <SectionHeaderHorizontal
           Img2={props.pipelineImg2}
@@ -43,7 +44,12 @@ const PipelineSection = (props) => {
           text="Our custom-built production management software is what sets us apart. Pipeline automates key parts of your workflow, gathers and presents data and insights, and keeps everything in one place. Plus, it integrates with your own project management software."
         />
 
-        <CreateDragDrop
+
+      <MDBContainer>
+        <MDBRow>
+          <MDBCol lg="8" style={{position:'relative'}}>
+          <CreateDragDrop
+          style={{width:'100%'}}
           image={props.createImg}
           image2={props.createImg2}
           image3={props.createImg3}
@@ -52,14 +58,20 @@ const PipelineSection = (props) => {
           text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
           btnText="Try it out"
           />
+          </MDBCol>
+          <MDBCol lg="4" className="d-inline align-middle" >
+              <div className="create-text">
+                <h3 className="orange-color-text">Adjust.</h3>
+                <p>Seamless review tools allow you to markup, comment, and leave decisions on assets within the Pipeline workflow. You can even make your own adjustments to assets in the tool.</p>
+                <Button />
+              </div>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
 
-        {/* <ImageTxtFullWidthLeft
-          image={props.createImg}
-          title="Create."
-          text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
-          btnText="Try it out"
-          direction=""
-        /> */}
+
+
+
 
         <ImgTxtFullWidthRight
           adaptImg={props.adaptImg}
@@ -89,7 +101,7 @@ const PipelineSection = (props) => {
           
         </div>
       </section>
-    </div>
+    </MDBContainer>
   );
 };
 

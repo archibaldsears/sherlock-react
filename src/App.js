@@ -41,6 +41,9 @@ function App() {
   //   console.log(id)
   // }
 
+
+
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -53,7 +56,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="pipeline" element={<Pipelinepage />} />
-          <Route path="about" element={<Aboutpage />} />
+          <Route path="about" element={<Aboutpage  />} />
           <Route path="work" element={<Workpage />} />
           <Route path="services" element={<Servicespage />} />
           <Route path="contact" element={<Contactpage />} />

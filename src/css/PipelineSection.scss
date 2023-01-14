@@ -57,34 +57,7 @@
       &.pipeline-drag-container {
         grid-template-columns:  4fr 3fr !important;
       }
-      .createImgContainer {
-        
-        width: 902px;
-        height: 605px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        padding-left: 2rem;
-        position: relative;
-        overflow: visible;
-        .absolute-pos {
-          position: absolute;
-          top: 0px;
-          left: 200px;
-          display: block;
-          width: 380px;
-          img:hover {
-            cursor: move; /* fallback if grab cursor is unsupported */
-            cursor: grab;
-            cursor: -moz-grab;
-            cursor: -webkit-grab;
-          }
-          img:active {
-            cursor: grabbing;
-            cursor: -moz-grabbing;
-            cursor: -webkit-grabbing;
-          }
-        }
-      }
+
 
       
     }
@@ -153,34 +126,7 @@
     justify-items: center;
     gap: 0;
   }
-    .createImgContainer {
-        
-      width: 100% !important;
-      height: 300px !important;
-      background-size: contain;
-      background-repeat: no-repeat;
-      padding-left: 2rem;
-      position: relative;
-      overflow: visible;
-      .absolute-pos {
-        position: absolute;
-        top: 0px;
-        left: 200px;
-        display: block;
-        width: 400px;
-        img:hover {
-          cursor: move; /* fallback if grab cursor is unsupported */
-          cursor: grab;
-          cursor: -moz-grab;
-          cursor: -webkit-grab;
-        }
-        img:active {
-          cursor: grabbing;
-          cursor: -moz-grabbing;
-          cursor: -webkit-grabbing;
-        }
-      }
-    }
+
   
     .Pipeline-container .Create-container {
       grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));

@@ -14,9 +14,9 @@
   /* transition: all 400ms ease-in-out; */
   -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
 -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
-  font-size: 22px;
+  font-size: 16px;
 }
-@media (max-width: 2200px) {
+/* @media (max-width: 2200px) {
   :root {
    font-size: 20px;
   }
@@ -71,7 +71,7 @@
 
   
 
-}
+} */
 
 .orange-color-text {
   color: var(--orange-text);
@@ -123,9 +123,9 @@ body {
   overflow-x: hidden;
 }
 
-p {
+/* p {
   font-size: 1.35rem;
-}
+} */
 
 .Main-container {
   max-width: 2200px;

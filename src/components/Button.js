@@ -8,6 +8,7 @@ const Button = ({ Text, Color, Type, onClick }) => {
       color="primary"
       rounded
       outline
+      rippleColor="primary"
       onClick={onClick}
       className={
         [Color, Type].join(" ") +

@@ -1,0 +1,98 @@
+@import './mdb.pro.scss';
+
+$my-theme-primary: #314476; // theme primary color, change this value to customize theme
+$my-theme-secondary: #FFA933; // theme secondary color, change this value to customize theme
+
+$my-theme: mdb-light-theme($my-theme-primary, $my-theme-secondary); // create the new theme using primary and
+// secondary colors
+
+// include theme styles
+@include mdb-theme($my-theme);
+
+
+a.nav-link {
+    line-height: '2rem';
+    &.selected {
+        color: $my-theme-secondary !important;
+        text-underline-offset: 0.5rem;
+    }
+}
+
+.never-selector {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.react-resizable {
+    position: relative;
+  }
+  .react-resizable-handle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    opacity: 1;
+    background-color: rgba(256,256,256,0.6);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    box-sizing: border-box;
+    background-image: url('https://cdn.iconscout.com/icon/free/png-256/resize-22-433633.png');
+    background-position: bottom right;
+    padding: 0 3px 3px 0;
+  }
+  .react-resizable-handle-sw {
+    bottom: 0;
+    left: 0;
+    cursor: sw-resize;
+    transform: rotate(90deg);
+  }
+  .react-resizable-handle-se {
+    bottom:-20px;
+    right: -10px;
+    cursor: se-resize;
+  }
+  .react-resizable-handle-nw {
+    top: 0;
+    left: 0;
+    cursor: nw-resize;
+    transform: rotate(180deg);
+  }
+  .react-resizable-handle-ne {
+    top: 0;
+    right: 0;
+    cursor: ne-resize;
+    transform: rotate(270deg);
+  }
+  .react-resizable-handle-w,
+  .react-resizable-handle-e {
+    top: 50%;
+    margin-top: -10px;
+    cursor: ew-resize;
+  }
+  .react-resizable-handle-w {
+    left: 0;
+    transform: rotate(135deg);
+  }
+  .react-resizable-handle-e {
+    right: 0;
+    transform: rotate(315deg);
+  }
+  .react-resizable-handle-n,
+  .react-resizable-handle-s {
+    left: 50%;
+    margin-left: -10px;
+    cursor: ns-resize;
+  }
+  .react-resizable-handle-n {
+    top: 0;
+    transform: rotate(225deg);
+  }
+  .react-resizable-handle-s {
+    bottom: 0;
+    transform: rotate(45deg);
+  }

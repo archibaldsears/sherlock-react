@@ -16,24 +16,67 @@ import {
   MDBDropdownToggle,
   MDBDropdownMenu,
 } from "mdb-react-ui-kit";
-
+import sherlockLogo from "../../images/sherlock-logo@4x.png";
 import "../../css/MaterialNavbar.scss";
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+
+function NavBarItem(props) {
+    // This styling will be applied to a <NavLink> when the
+  // route that it links to is currently selected.
+  let activeStyle = {
+    textDecoration: 'underline',
+    
+  };
+
+  let activeClassName = "nav-link selected";
+  let normalClassName = "nav-link"
+  return (
+    <MDBNavbarItem className="p-5">
+          <NavLink
+            to={props.link}
+            style={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            }
+            className={({ isActive }) =>
+              isActive ? activeClassName : normalClassName
+            }
+            >
+              {props.nav}
+
+            </NavLink>
+    </MDBNavbarItem>
+  );
+}
 
 const MaterialNavbar = () => {
   const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
-  // const [showNavCentred, setShowNavCentred] = useState(false);
-  // let text = {
-  //   nav1: "Home",
-  //   nav2: "about",
-  //   nav3: "about",
-  //   nav4: ""
-  // }
+  const [showNavCentred, setShowNavCentred] = useState(false);
+  let text = {
+    nav1: "Home",
+    link1: "/sherlock-react",
+    nav2: "About",
+    link2: "/About",
+    nav3: "Pipeline",
+    link3: "/Pipeline",
+    nav4: "Work",
+    link4: "/Work",
+    nav5: "Services",
+    link5: "/Services",
+    nav6: "Contact",
+    link6: "/Contact",
+  };
 
   return (
     <>
-      <MDBNavbar className="navbar-custom py-4" expand="lg" light bgColor="light">
+      <MDBNavbar
+        className="navbar-custom"
+        expand="lg"
+        light
+        bgColor="light"
+      >
         <MDBContainer>
-          <MDBNavbarBrand href="#">Navbar</MDBNavbarBrand>
           <MDBNavbarToggler
             type="button"
             data-target="#navbarTogglerDemo02"
@@ -44,65 +87,49 @@ const MaterialNavbar = () => {
           >
             <MDBIcon icon="bars" fas />
           </MDBNavbarToggler>
-          <MDBCollapse navbar show={showNavNoTogglerSecond}>
-            <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
-              <MDBNavbarItem>
-                <MDBNavbarLink active aria-current="page" href="#">
-                  Home
-                </MDBNavbarLink>
-              </MDBNavbarItem>
+          <MDBCollapse
+            navbar
+            className="justify-content-center "
+            show={showNavNoTogglerSecond}
+          >
+            <MDBNavbarNav className=" justify-content-center  mb-6 mb-lg-0">
 
-              <MDBNavbarItem>
-                <MDBDropdown>
-                  <MDBDropdownToggle tag="a" className="nav-link" role="button">
-                    About
-                  </MDBDropdownToggle>
-                  <MDBDropdownMenu>
-                    <MDBDropdownItem link>Option 1</MDBDropdownItem>
-                    <MDBDropdownItem link>Another action</MDBDropdownItem>
-                    <MDBDropdownItem link>Something else here</MDBDropdownItem>
-                  </MDBDropdownMenu>
-                </MDBDropdown>
-              </MDBNavbarItem>
+              <NavBarItem 
+              nav={text.nav1}
+              link={text.link1} 
+              ></NavBarItem>
+              <NavBarItem 
+              nav={text.nav2}
+              link={text.link2} 
+              ></NavBarItem>
+              <NavBarItem 
+              nav={text.nav3}
+              link={text.link3} 
+              ></NavBarItem>
 
-              <MDBNavbarItem>
-                <MDBNavbarLink active aria-current="page" href="#">
-                  Pipeline
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href="#">Work</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink active aria-current="page" href="#">
-                  Services
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink active aria-current="page" href="#">
-                  Contact
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink
-                  disabled
-                  href="#"
-                  tabIndex={-1}
-                  aria-disabled="true"
-                >
-                  Disabled
-                </MDBNavbarLink>
-              </MDBNavbarItem>
+              <img
+              src={sherlockLogo}           
+              alt=''
+              loading='lazy'
+            />
+
+              <NavBarItem 
+              nav={text.nav4}
+              link={text.link4} 
+              ></NavBarItem>
+              <NavBarItem 
+              nav={text.nav5}
+              link={text.link5} 
+              ></NavBarItem>
+              <NavBarItem 
+              nav={text.nav6}
+              link={text.link6} 
+              ></NavBarItem>
+              
+
+
+
             </MDBNavbarNav>
-            <MDBInputGroup tag="form" className="d-flex w-auto">
-              <input
-                className="form-control"
-                placeholder="Type query"
-                aria-label="Search"
-                type="Search"
-              />
-              <MDBBtn outline>Search</MDBBtn>
-            </MDBInputGroup>
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>

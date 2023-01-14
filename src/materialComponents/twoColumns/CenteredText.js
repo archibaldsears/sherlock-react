@@ -17,12 +17,12 @@ const CenteredText = () => {
           <motion.div>
             <MDBRow>
               <motion.div>
-                <MDBCol size="6" sm="3" className="d-flex ">
+                <MDBCol  md="3" className="d-flex ">
                   <MotionH1 text1={text.text1}></MotionH1>
                 </MDBCol>
               </motion.div>
               <motion.div>
-              <MDBCol size="6" sm="3" className="d-flex ">
+              <MDBCol  md="3" className="d-flex ">
                   <MotionH1 text1={text.text2}></MotionH1>
                 </MDBCol>
               </motion.div>

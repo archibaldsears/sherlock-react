@@ -1,0 +1,30 @@
+.absolute-pos {
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    display: block;
+    width: 380px;
+    img:hover {
+      cursor: move; /* fallback if grab cursor is unsupported */
+      cursor: grab;
+      cursor: -moz-grab;
+      cursor: -webkit-grab;
+    }
+    img:active {
+      cursor: grabbing;
+      cursor: -moz-grabbing;
+      cursor: -webkit-grabbing;
+    }
+  }
+
+  .createImgContainer {
+        
+    width: 100%;
+    height: 605px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    position: relative;
+    overflow: visible;
+
+  }
