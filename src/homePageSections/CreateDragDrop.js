@@ -28,7 +28,7 @@ const CreateDragDrop = (props) => {
           whileDrag={{ opacity: 0.8, scale: 1 }}
           dragElastic={0.1}
           dragListener={shouldDrag1BeEnabled}
-          whileHover={{ scale: 1 }}
+          whileHover={{ scale: 1.05 }}
           alt=""
         >
           <ResizableBox
@@ -60,7 +60,7 @@ const CreateDragDrop = (props) => {
           whileFocus={{zIndex: 2}}
           dragElastic={0.1}
           dragListener={shouldDrag2BeEnabled}
-          whileHover={{ scale: 1 }}
+          whileHover={{ scale: 1.05 }}
           alt=""
         >
           <ResizableBox
