@@ -26,6 +26,7 @@ const CreateDragDrop = (props) => {
           dragMomentum={false}
           dragConstraints={{ top: -60, left: -350, right: 30, bottom: 200 }}
           whileDrag={{ opacity: 0.8, scale: 1 }}
+          whileFocus={{zIndex: 2}}
           dragElastic={0.1}
           dragListener={shouldDrag1BeEnabled}
           whileHover={{ scale: 1.05 }}
