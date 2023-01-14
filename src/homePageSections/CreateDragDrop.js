@@ -24,7 +24,7 @@ const CreateDragDrop = (props) => {
         <motion.div
           drag
           dragMomentum={false}
-          dragConstraints={{ top: 0, left: -150, right: 300, bottom: 400 }}
+          dragConstraints={{ top: -60, left: -350, right: 30, bottom: 200 }}
           whileDrag={{ opacity: 0.8, scale: 1 }}
           dragElastic={0.1}
           dragListener={shouldDrag1BeEnabled}
@@ -40,16 +40,24 @@ const CreateDragDrop = (props) => {
             <motion.img
               className="never-selector"
               src={props.image3}
-              onHoverStart={() => setDrag1Enable(!shouldDrag1BeEnabled)}
-              onHoverEnd={() => setDrag1Enable(!shouldDrag1BeEnabled)}
+              onHoverStart={() => {
+                if (!shouldDrag1BeEnabled) 
+                {setDrag1Enable(!shouldDrag1BeEnabled)} 
+                }
+              }
+              onHoverEnd={() => {
+                if (shouldDrag1BeEnabled) 
+                {setDrag1Enable(!shouldDrag1BeEnabled)} 
+                }}
             />
           </ResizableBox>
         </motion.div>
         <motion.div
           drag
           dragMomentum={false}
-          dragConstraints={{ top: -180, left: -150, right: 300, bottom: 200 }}
+          dragConstraints={{ top: -200, left: -350, right: 30, bottom: 50 }}
           whileDrag={{ opacity: 0.8, scale: 1 }}
+          whileFocus={{zIndex: 2}}
           dragElastic={0.1}
           dragListener={shouldDrag2BeEnabled}
           whileHover={{ scale: 1 }}
@@ -64,8 +72,15 @@ const CreateDragDrop = (props) => {
             <motion.img
               className="never-selector"
               src={props.image4}
-              onHoverStart={() => setDrag2Enable(!shouldDrag2BeEnabled)}
-              onHoverEnd={() => setDrag2Enable(!shouldDrag2BeEnabled)}
+              onHoverStart={() => {
+                if (!shouldDrag2BeEnabled) 
+                {setDrag2Enable(!shouldDrag2BeEnabled)} 
+                }
+              }
+              onHoverEnd={() => {
+                if (shouldDrag2BeEnabled) 
+                {setDrag2Enable(!shouldDrag2BeEnabled)} 
+                }}
             />
           </ResizableBox>
         </motion.div>
