@@ -59,11 +59,11 @@ const PipelineSection = (props) => {
           btnText="Try it out"
           />
           </MDBCol>
-          <MDBCol lg="4" className="d-inline align-middle" >
+          <MDBCol lg="4" className="align-self-center" >
               <div className="create-text">
                 <h3 className="orange-color-text">Adjust.</h3>
                 <p>Seamless review tools allow you to markup, comment, and leave decisions on assets within the Pipeline workflow. You can even make your own adjustments to assets in the tool.</p>
-                <Button />
+                <Button Color="secondary" />
               </div>
           </MDBCol>
         </MDBRow>
@@ -72,7 +72,7 @@ const PipelineSection = (props) => {
 
 
 
-
+        
         <ImgTxtFullWidthRight
           adaptImg={props.adaptImg}
           title="Create."

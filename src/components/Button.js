@@ -5,10 +5,10 @@ import { MDBBtn } from "mdb-react-ui-kit";
 const Button = ({ Text, Color, Type, onClick }) => {
   return (
     <MDBBtn
-      color="primary"
+      color={Color}
       rounded
       outline
-      rippleColor="primary"
+      rippleColor={Color}
       onClick={onClick}
       className={
         [Color, Type].join(" ") +
