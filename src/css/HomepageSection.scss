@@ -39,7 +39,7 @@ $line-spacing: 5rem;
     align-items: baseline;
     &.title-static {
       position: relative;
-      top: $line-spacing;
+      top: calc($line-spacing *2);
     }
   }
 
