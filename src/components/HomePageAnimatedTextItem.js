@@ -26,7 +26,7 @@ function HomepageMotionItem({ keyframes, item, animating, animatingFunction }) {
       if (i === 7) {
         i = 0;
       }
-    }, 2500);
+    }, 3500);
     return () => clearInterval(interval);
   }, [animating, Animation, cycle, keyframes]);
 
