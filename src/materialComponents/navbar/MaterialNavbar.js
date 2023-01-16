@@ -76,7 +76,7 @@ const MaterialNavbar = () => {
         light
         bgColor="light"
       >
-        <MDBContainer>
+        <MDBContainer fluid>
           <MDBNavbarToggler
             type="button"
             data-target="#navbarTogglerDemo02"
@@ -106,13 +106,16 @@ const MaterialNavbar = () => {
               nav={text.nav3}
               link={text.link3} 
               ></NavBarItem>
-
+              <Link to="sherlock-react">
+              <MDBNavbarBrand
+              >
               <img
               src={sherlockLogo}           
               alt=''
               loading='lazy'
-            />
-
+              />
+              </MDBNavbarBrand>
+              </Link>
               <NavBarItem 
               nav={text.nav4}
               link={text.link4} 

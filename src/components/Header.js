@@ -35,7 +35,7 @@ const Header = ({
           <p onClick={clickFunction} className="header-text">{navOptions.nav3}</p>
         </Link>
         
-        <Link to="sherlock-react">
+        <Link to="/sherlock-react">
           <img src={sherlockLogo} alt="Sherlock Logo" />
         </Link>
         

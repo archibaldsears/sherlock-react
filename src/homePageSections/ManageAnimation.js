@@ -12,7 +12,7 @@ const ManageAnimation = ({ faceImg }) => {
     },
     {
       id: 2,
-      text: "brand delivery.",
+      text: "global brand delivery.",
     },
     {
       id: 3,
