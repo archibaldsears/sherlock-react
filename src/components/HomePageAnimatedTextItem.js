@@ -18,6 +18,7 @@ function HomepageMotionItem({ keyframes, item, animating, animatingFunction }) {
         Animation.start({
           y: keyframes[i],
         });
+        
       } else {
         Animation.stop({ y: Animation.get() });
       }
@@ -29,20 +30,24 @@ function HomepageMotionItem({ keyframes, item, animating, animatingFunction }) {
     return () => clearInterval(interval);
   }, [animating, Animation, cycle, keyframes]);
 
+
   return (
     <motion.h1
-      animate={animating && animation}
+      animate={animation}
       initial={{ opacity: 0 }}
+      whileHover={{ opacity: 1}}
+      
       className="item"
-      transition={{
-        duration: 1,
-        type: "spring",
-      }}
     >
       <Link to="/work">
-      <motion.button onClick={animatingFunction}>
+      <motion.button 
+        
+      >
+      
         {item.text}
+        
         {/* {animating ? "clicked" : "stop"} */}
+      
       </motion.button>
       </Link>
     </motion.h1>

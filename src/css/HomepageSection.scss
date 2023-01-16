@@ -68,6 +68,24 @@ $line-spacing: 5rem;
   flex-direction: column;
   }
 
+  // .item {
+  //   position: relative;
+  //   &:hover {
+      
+  //     transition: opacity 1000ms ease-in;
+  //     opacity: 1 !important;
+  //   }
+  //   &:hover::after {
+  //     content: 'View More >';
+  //     position: absolute;
+  //     bottom: 5px;
+  //     left: 0px;
+
+  //     display: contents;
+
+  //   }
+  // }
+
 
   // @for $i from 1 through 7  {
   //   .item:nth-child( #{$i} ) {
