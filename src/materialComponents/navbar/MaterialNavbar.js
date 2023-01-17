@@ -85,6 +85,14 @@ const MaterialNavbar = () => {
             aria-label="Toggle navigation"
             onClick={() => setShowNavNoTogglerSecond(!showNavNoTogglerSecond)}
           >
+                          <MDBNavbarBrand href="/sherlock-react"
+              >
+              <img
+              src={sherlockLogo}           
+              alt=''
+              loading='lazy'
+              />
+              </MDBNavbarBrand>
             <MDBIcon icon="bars" fas />
           </MDBNavbarToggler>
           <MDBCollapse
@@ -106,8 +114,8 @@ const MaterialNavbar = () => {
               nav={text.nav3}
               link={text.link3} 
               ></NavBarItem>
-              <Link to="sherlock-react">
-              <MDBNavbarBrand
+              
+              <MDBNavbarBrand href="/sherlock-react"
               >
               <img
               src={sherlockLogo}           
@@ -115,7 +123,7 @@ const MaterialNavbar = () => {
               loading='lazy'
               />
               </MDBNavbarBrand>
-              </Link>
+              
               <NavBarItem 
               nav={text.nav4}
               link={text.link4} 

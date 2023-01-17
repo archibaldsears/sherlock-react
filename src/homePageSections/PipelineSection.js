@@ -7,6 +7,8 @@ import CreateDragDrop from "./CreateDragDrop";
 
 import "../css/PipelineSection.scss";
 import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
+import ImageWithText from "../materialComponents/twoColumns/ImageWithText";
+import TextCopyBtnCol from "../materialComponents/columns/TextCopyBtnCol";
 
 function PipelineManage(props) {
   return (
@@ -59,40 +61,51 @@ const PipelineSection = (props) => {
           btnText="Try it out"
           />
           </MDBCol>
-          <MDBCol lg="4" className="align-self-center" >
-              <div className="create-text">
-                <h3 className="orange-color-text">Adjust.</h3>
-                <p>Seamless review tools allow you to markup, comment, and leave decisions on assets within the Pipeline workflow. You can even make your own adjustments to assets in the tool.</p>
-                <Button Color="secondary" />
-              </div>
-          </MDBCol>
+
+          <TextCopyBtnCol
+            title={'Adjust.'}
+            copy={'Seamless review tools allow you to markup, comment, and leave decisions on assets within the Pipeline workflow. You can even make your own adjustments to assets in the tool.'}
+            btnText={'Learn More'}
+            mdNumber="4"
+          ></TextCopyBtnCol>
         </MDBRow>
       </MDBContainer>
 
 
 
-
-        
-        <ImgTxtFullWidthRight
-          adaptImg={props.adaptImg}
-          title="Create."
-          text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
+      <MDBContainer className="pt-5 md-5 mt-5">
+        <ImageWithText
+        image={props.adaptImg}
+        title="Create."
+          copy="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
           btnText="Try it out"
-          direction=""
-        />
+          direction="textRight"
+      ></ImageWithText>
+      </MDBContainer>
 
-
+{/* 
         <PipelineManage
           manageImg={props.manageImg}
-          title="Create."
+          title="Manage."
           text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
           btnText="Try it out"
           direction=""
-        />
+        /> */}
 
+        <MDBContainer>
+        <ImageWithText
+          image={props.manageImg}
+          direction="textLeft"
+          title="Manage."
+          copy="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
+          btnText="Try it out"
+        ></ImageWithText> 
+
+        
+        </MDBContainer>
         <div className="deliver-container Main-container">
           <div className="row-area">
-          <h3 className="red-color-text ">Deliver</h3>
+          <h3 className="title red-color-text ">Deliver</h3>
 	        <p>We develop automated delivery processes, including automatic file naming and sizing, so your project can be completed at the literal click of a button.</p>
           
           </div>

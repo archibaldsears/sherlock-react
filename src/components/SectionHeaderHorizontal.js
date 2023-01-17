@@ -7,7 +7,7 @@ const SectionHeaderHorizontal = (props) => {
       <img src={props.Img2} alt="" />
       <div>
         <img className="Pipeline-logo" src={props.Logo} alt="" />
-        <p>
+        <p className="bigger">
           {props.text}
         </p>
         <Button Text="hello" />
