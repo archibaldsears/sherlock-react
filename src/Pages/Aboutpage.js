@@ -12,6 +12,7 @@ const Aboutpage = () => {
     title: "Your dedicated Sherlock team",
     copy: "Your work is global, and so is our team. With more than 150 creative specialists from Tokyo to London and everywhere in between, we're on-call around the clock to make sure your project gets a smooth handover, or pick up that last-minute order you just found was due yesterday. No problem. No delays.",
     btnText: "Call to Action",
+    textFirst: true
   }
 
   const aboutContentInfo = [
