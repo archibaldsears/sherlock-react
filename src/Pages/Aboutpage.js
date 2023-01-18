@@ -1,19 +1,10 @@
 import "../css/AboutPage.scss";
-import placeholder from "../images/placeholder@4x.png";
-import CardWithImage from "../materialComponents/wireframes/CardWithImage";
 import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBRow,
-  MDBCol,
-  MDBBtn,
   MDBContainer,
 } from "mdb-react-ui-kit";
 import ImageWithText from "../materialComponents/twoColumns/ImageWithText";
 import MainFront from "../materialComponents/pageFronts/MainFront";
-
+import {AnimatePresence, easeInOut, motion} from 'framer-motion'
 const Aboutpage = () => {
 
   const aboutMainFrontContent = {
@@ -50,7 +41,15 @@ const Aboutpage = () => {
   ];
 
   return (
-    
+    <motion.div
+      initial={{ x: -(window.innerWidth / 5), opacity: 0 }}
+      animate={{ x: 1, opacity: 1 }}
+      exit={{ x: window.innerWidth / 5, opacity: 0 }}
+      transition={{
+        duration: 0.1,
+        ease: "easeInOut",
+      }}
+    >
     <MDBContainer fluid>
     <MainFront
     content={aboutMainFrontContent}
@@ -68,7 +67,7 @@ const Aboutpage = () => {
       ))}
     </MDBContainer>
     </MDBContainer>
-  
+    </motion.div>
   );
 };
 

@@ -19,7 +19,7 @@ import ManageAnimation from "../homePageSections/ManageAnimation";
 import VideoContainer from "../homePageSections/VideoContainer";
 import PipelineSection from "../homePageSections/PipelineSection";
 
-
+import {AnimatePresence, motion} from 'framer-motion'
 import "../css/HomepageSection.scss";
 import "../css/AppHeader.scss";
 
@@ -64,7 +64,15 @@ const Homepage = () => {
   ];
 
   return (
-    <div>
+    <motion.div
+      initial={{ x: -(window.innerWidth / 5), opacity: 0 }}
+      animate={{ x: 1, opacity: 1 }}
+      exit={{ x: window.innerWidth / 5, opacity: 0 }}
+      transition={{
+        duration: 0.1,
+        ease: "easeInOut",
+      }}
+    >
       <ManageAnimation faceImg={faceImg} title="We manage your" />
 
       <HomePageThreeCards cards={cardText}></HomePageThreeCards>
@@ -82,7 +90,7 @@ const Homepage = () => {
         adaptImg={adaptImg}
         manageImg={manageImg}
       />
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,10 +1,68 @@
+import { MDBContainer } from 'mdb-react-ui-kit';
 import '../css/CaseStudy.scss'
+import MainFront from '../materialComponents/pageFronts/MainFront';
 
 const Workpage = () => {
-  return (
-    <div className="Main-container workpage">
-      <h1>Case Studies</h1>
+  const workMainFrontContent = {
+    id: 1,
+    title: "Case-study",
+    copy: "Our software keeps every element of your project together, in one place, while helping us produce and deliver your assets. You can order new projects, manage spend, produce instant adaptations, track your work, and get automated delivery—all from your homepage. It’s your favorite software you’ve never heard of.",
+  }
 
+  const caseStudies = [
+    {
+      id: 1,
+      // image: placeholder,
+      direction: "textLeft",
+      title: "Simultaneous Global Streaming Launches",
+      copy: "In Q4 2019 and Q1 2020, two major Hollywood studios launched their respective globally-competitive streaming services in dozens of international markets.", btnText: "Call to Action",
+      // btnColor: "orange",
+      // BtnOnclick: onClick,
+      // type: "CTA",
+    },
+    {
+      id: 2,
+      // image: placeholder,
+      direction: "textRight",
+      title: "Multi Endpoint Delivery",
+      copy: "We deliver everywhere whether it be to your Digital Asset Management system, your customer or your partners. Our automated delivery process will get your assets to where they need to go with automated file name formatting in just one click.",
+      btnText: "Call to Action",
+      // btnColor: "orange",
+      // BtnOnclick: onClick,
+      // type: "CTA",
+    },
+    {
+    id: 3,
+    // image: placeholder,
+    direction: "textLeft",
+    title: "Localization",
+    copy: "As multi-lingual specialists, we can localize your assets to any language and in any size no matter the medium. With pre-programmed art safe zones in Pipeline we can easily verify that you’re artwork is pixel perfect.",
+    btnText: "Call to Action",
+    // btnColor: "orange",
+    // BtnOnclick: onClick,
+    // type: "CTA",
+  },
+  {
+    id: 4,
+    // image: placeholder,
+    direction: "textRight",
+    title: "Storage",
+    copy: "Looking for that asset you thought you no longer needed, but do now? Don't panic. No asset is left behind and will still be stored in Pipeline.",
+    btnText: "Call to Action",
+    // btnColor: "orange",
+    // BtnOnclick: onClick,
+    // type: "CTA",
+  },
+  ];
+
+  return (
+    <>
+    <MDBContainer  fluid>
+    <MainFront
+    content={workMainFrontContent}
+    ></MainFront>
+    </MDBContainer>
+    <MDBContainer>
       <section className="Case-study">
         <h2>Simultaneous Global Streaming Launches</h2>
         <p>
@@ -93,7 +151,9 @@ const Workpage = () => {
           generate revenue on transactional and streaming platforms worldwide.
         </p>
       </section>
-    </div>
+    
+     </MDBContainer>
+    </>
   );
 };
 

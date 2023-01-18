@@ -5,12 +5,7 @@ import {  ResizableBox } from "react-resizable";
 // import { MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import "../css/DragDrop.scss";
 
-// const MyHandle = React.forwardRef((props, ref) => {
-//   const { handleAxis, ...restProps } = props;
-//   return (
-//     <div ref={ref} className={`foo handle-${handleAxis}`} {...restProps} />
-//   );
-// });
+
 
 const CreateDragDrop = (props) => {
   const [shouldDrag1BeEnabled, setDrag1Enable] = useState(false);

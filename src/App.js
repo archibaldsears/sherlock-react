@@ -8,23 +8,19 @@ import "./fonts/Kollektif-Italic.ttf";
 import "./fonts/Kollektif-BoldItalic.ttf";
 
 //react imports
-import { BrowserRouter, Routes, Route }  from "react-router-dom";
+import { BrowserRouter }  from "react-router-dom";
 
 //components
 // import Header from "./components/Header";
 
 //pages
-import Homepage from "./Pages/Homepage";
-import Pipelinepage from "./Pages/Pipelinepage";
-import Aboutpage from "./Pages/Aboutpage";
-import Workpage from "./Pages/Workpage";
-import Servicespage from "./Pages/Servicespage";
-import Contactpage from "./Pages/Contactpage";
+
 import Footer from "./components/Footer";
 
 //material components
 // import CenteredText from "./materialComponents/twoColumns/CenteredText.js";
 import MaterialNavbar from "./materialComponents/navbar/MaterialNavbar.js";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 // const NavigationOptions = {
 //   nav1: "Home",
@@ -43,7 +39,7 @@ function App() {
 
 
 
-
+  // const location = useLocation();
   return (
     <div className="App">
       <BrowserRouter>
@@ -53,17 +49,7 @@ function App() {
         {/* <CenteredText /> */}
 
 
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="pipeline" element={<Pipelinepage />} />
-          <Route path="about" element={<Aboutpage  />} />
-          <Route path="work" element={<Workpage />} />
-          <Route path="services" element={<Servicespage />} />
-          <Route path="contact" element={<Contactpage />} />
-          {/* for github pages */}
-          <Route path="/sherlock-react" element={<Homepage />} />
-          <Route path="/*" element={<Homepage />} />
-        </Routes>
+        <AnimatedRoutes></AnimatedRoutes>
 
         <Footer />
       </BrowserRouter>

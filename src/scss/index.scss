@@ -19,7 +19,7 @@ a.nav-link {
 }
 
 .never-selector {
-    user-drag: none;
+    // user-drag: none;
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
@@ -27,8 +27,4 @@ a.nav-link {
     -ms-user-select: none;
 }
 
-.mainFront {
-    // height: 80vh;
-    // justify-content: center;
-    // margin: 15vh auto 30vh auto;
-}
+
