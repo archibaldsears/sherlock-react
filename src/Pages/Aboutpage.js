@@ -5,6 +5,7 @@ import {
 import ImageWithText from "../materialComponents/twoColumns/ImageWithText";
 import MainFront from "../materialComponents/pageFronts/MainFront";
 import {AnimatePresence, easeInOut, motion} from 'framer-motion'
+import MovingShapes from "../materialComponents/pageFronts/MovingShapes";
 const Aboutpage = () => {
 
   const aboutMainFrontContent = {
@@ -51,6 +52,8 @@ const Aboutpage = () => {
         ease: "easeInOut",
       }}
     >
+
+    <MovingShapes></MovingShapes>
     <MDBContainer fluid>
     <MainFront
     content={aboutMainFrontContent}

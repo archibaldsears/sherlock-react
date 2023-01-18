@@ -100,8 +100,8 @@ const PipelineSection = (props) => {
           copy="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
           btnText="Try it out"
         ></ImageWithText> 
+      
 
-        
         </MDBContainer>
         <div className="deliver-container Main-container">
           <div className="row-area">
