@@ -53,7 +53,7 @@ const Aboutpage = () => {
       }}
     >
 
-    <MovingShapes></MovingShapes>
+    
     <MDBContainer fluid>
     <MainFront
     content={aboutMainFrontContent}

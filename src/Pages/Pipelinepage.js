@@ -3,7 +3,8 @@ import {
 } from "mdb-react-ui-kit";
 import ImageWithText from "../materialComponents/twoColumns/ImageWithText";
 import MainFront from "../materialComponents/pageFronts/MainFront";
-
+import { motion } from "framer-motion";
+import MovingShapes from "../materialComponents/pageFronts/MovingShapes";
 
 const Pipelinepage = () => {
   
@@ -75,7 +76,16 @@ const Pipelinepage = () => {
   ];
 
   return (
-    <>
+    <motion.div
+    initial={{ x: -(window.innerWidth / 5), opacity: 0 }}
+    animate={{ x: 1, opacity: 1 }}
+    exit={{ x: window.innerWidth / 5, opacity: 0 }}
+    transition={{
+      duration: 0.1,
+      ease: "easeInOut",
+    }}
+  >
+    <MovingShapes></MovingShapes>
     <MainFront
     content={pipelineMainFrontContent}></MainFront>
     <MDBContainer>
@@ -89,7 +99,7 @@ const Pipelinepage = () => {
       ></ImageWithText>
     ))}
   </MDBContainer>
-  </>
+  </motion.div>
   )
 }
 

@@ -17,9 +17,7 @@ const MovingShapes = () => {
             </h1>
 
             <p className="lead fw-normal text-muted">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            Our software keeps every element of your project together, in one place, while helping us produce and deliver your assets. You can order new projects, manage spend, produce instant adaptations, track your work, and get automated delivery—all from your homepage. It’s your favorite software you’ve never heard of.
             </p>
 
             <button type="button" className="btn btn-secondary btn-lg mt-4 me-2">

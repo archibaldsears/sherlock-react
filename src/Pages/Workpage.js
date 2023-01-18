@@ -1,6 +1,7 @@
 import { MDBContainer } from 'mdb-react-ui-kit';
 import '../css/CaseStudy.scss'
 import MainFront from '../materialComponents/pageFronts/MainFront';
+import { motion } from 'framer-motion';
 
 const Workpage = () => {
   const workMainFrontContent = {
@@ -56,7 +57,15 @@ const Workpage = () => {
   ];
 
   return (
-    <>
+    <motion.div
+    initial={{ x: -(window.innerWidth / 5), opacity: 0 }}
+    animate={{ x: 1, opacity: 1 }}
+    exit={{ x: window.innerWidth / 5, opacity: 0 }}
+    transition={{
+      duration: 0.1,
+      ease: "easeInOut",
+    }}
+  >
     <MDBContainer  fluid>
     <MainFront
     content={workMainFrontContent}
@@ -153,7 +162,7 @@ const Workpage = () => {
       </section>
     
      </MDBContainer>
-    </>
+    </motion.div>
   );
 };
 

@@ -3,6 +3,8 @@ import {
   MDBContainer,
 } from "mdb-react-ui-kit";
 import ImageWithText from "../materialComponents/twoColumns/ImageWithText";
+import { motion } from "framer-motion";
+
 const Servicespage = () => {
 
   const servicesMainFrontContent = {
@@ -59,7 +61,15 @@ const Servicespage = () => {
   ];
 
   return (
-    <>
+    <motion.div
+    initial={{ x: -(window.innerWidth / 5), opacity: 0 }}
+    animate={{ x: 1, opacity: 1 }}
+    exit={{ x: window.innerWidth / 5, opacity: 0 }}
+    transition={{
+      duration: 0.1,
+      ease: "easeInOut",
+    }}
+  >
     
     <MainFront
     content={servicesMainFrontContent}
@@ -78,7 +88,7 @@ const Servicespage = () => {
     </MDBContainer>
     
 
-    </>
+    </motion.div>
   )
 }
 
