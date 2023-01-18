@@ -1,13 +1,4 @@
-import homeImg1 from "../images/illustration-home-PM@4x.webp";
-import CardWithImage from "../materialComponents/wireframes/CardWithImage";
 import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBRow,
-  MDBCol,
-  MDBBtn,
   MDBContainer,
 } from "mdb-react-ui-kit";
 import ImageWithText from "../materialComponents/twoColumns/ImageWithText";

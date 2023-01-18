@@ -19,7 +19,7 @@ import ManageAnimation from "../homePageSections/ManageAnimation";
 import VideoContainer from "../homePageSections/VideoContainer";
 import PipelineSection from "../homePageSections/PipelineSection";
 
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion} from 'framer-motion'
 import "../css/HomepageSection.scss";
 import "../css/AppHeader.scss";
 
