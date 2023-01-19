@@ -1,10 +1,10 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
-import placeholder from "../../images/placeholder@4x.png";
-const ImgCol = ({image, mdNumber}) => {
+import { MDBCol } from "mdb-react-ui-kit";
+import placeholder from "../../images/placeholder@4x.webp";
+const ImgCol = ({image, mdNumberImg}) => {
     return (
-        <MDBCol md={mdNumber} sm="12" className="
+        <MDBCol md={mdNumberImg} sm="12" className="
         mb-4 mb-md-0
         position-relative
         d-flex
@@ -17,7 +17,7 @@ const ImgCol = ({image, mdNumber}) => {
 }
 ImgCol.defaultProps = {
     image: placeholder,
-    mdNumber: "6"
+    mdNumberImg: "6"
 }
 
 export default ImgCol

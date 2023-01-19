@@ -67,7 +67,8 @@ const PipelineSection = (props) => {
             title={'Adjust.'}
             copy={'Seamless review tools allow you to markup, comment, and leave decisions on assets within the Pipeline workflow. You can even make your own adjustments to assets in the tool.'}
             // btnText={'Learn More'}
-            mdNumber="4"
+            mdNumberTxt="4"
+            mdNumberImg="8"
           ></TextCopyBtnCol>
         </MDBRow>
       </MDBContainer>
@@ -79,7 +80,8 @@ const PipelineSection = (props) => {
         image={props.adaptImg}
         title="Create."
           copy="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
-          
+          mdNumberTxt="4"
+          mdNumberImg="8"
           direction="textRight"
       ></ImageWithText>
       </MDBContainer>
@@ -99,7 +101,8 @@ const PipelineSection = (props) => {
           direction="textLeft"
           title="Manage."
           copy="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
-          
+          mdNumberTxt="4"
+          mdNumberImg="8"
         ></ImageWithText> 
       
 

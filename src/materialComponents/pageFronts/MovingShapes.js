@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Button from '../../components/Button';
+// import Button from '../../components/Button';
 import "../../css/MovingShapes.scss";
 // import mapImg from "../../images/mapImg@4x.png";
 import computerImg from "../../images/ComputerPipelineScreen@4x.webp";
@@ -17,7 +17,8 @@ const MovingShapes = () => {
         title="Powered by"
         titleHighlighted="Sherlock Pipeline"
         copy="Our software keeps every element of your project together, in one place, while helping us produce and deliver your assets. You can order new projects, manage spend, produce instant adaptations, track your work, and get automated delivery—all from your homepage. It’s your favorite software you’ve never heard of."
-        mdNumber="5"
+        mdNumberTxt="5"
+        mdNumberImg="7"
         btnText="Try it out"
         btnTextSecondary="Learn more"
         >

@@ -1,4 +1,4 @@
-import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
+import { MDBCol, MDBContainer } from "mdb-react-ui-kit";
 import React from "react";
 import ImgCol from "../columns/ImgCol";
 
@@ -8,10 +8,10 @@ const MainFront = ({ content }) => {
       <MDBContainer className="">
         <div className="row align-items-center">
           <MDBCol className="mainFront text-center align-self-center">
-            {content.imgFirst && <ImgCol mdNumber="12"></ImgCol>}
+            {content.imgFirst && <ImgCol mdNumberImg="12"></ImgCol>}
             <h1 className="p-2">{content.title}</h1>
             <p className={content.imgFirst ? 'p-4' : 'p-2'}>{content.copy}</p>
-            {content.textFirst && <ImgCol mdNumber="12"></ImgCol>}
+            {content.textFirst && <ImgCol mdNumberImg="12"></ImgCol>}
           </MDBCol>
         </div>
       </MDBContainer>

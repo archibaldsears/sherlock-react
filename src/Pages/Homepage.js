@@ -1,19 +1,21 @@
 import faceImg from "../images/faces@4x.svg";
-import homeImg1 from "../images/illustration-home-PM@4x.png";
-import homeImg2 from "../images/illustration-home-DM@4x.png";
+import homeImg1 from "../images/illustration-home-PM@4x.webp";
+import homeImg2 from "../images/illustration-home-DM@4x.webp";
 import videoImg from "../images/video@4x.webp";
 
-import pipelineImg1 from "../images/pipeline-img-1@4x.webp";
-import pipelineImg2 from "../images/pipeline-img-2@4x.webp";
-import pipelineLogo from "../images/sherlock-pipeline-logo@4x.webp";
+import pipelineImg1 from "../images/pipeline-img-1@4x.png";
+import pipelineImg2 from "../images/pipeline-img-2@4x.png";
+import pipelineLogo from "../images/sherlock-pipeline-logo@4x.png";
 import createImg from "../images/Create-img@4x.webp";
 import adaptImg from "../images/Adapt-img@4x.webp";
 import manageImg from "../images/Desktop-img@4x.webp";
 
-import mandoBg from "../images/mando-bg@4x.png";
-import mandoBgNoTT from "../images/mando-bg-noTT@4x.png";
-import mandolanguage1 from "../images/mandolanguage1@4x.png";
-import mandolanguage2 from "../images/mandolanguage2@4x.png";
+import mandoBg from "../images/mando-bg@4x.webp";
+import mandoBgNoTT from "../images/mando-bg-noTT@4x.webp";
+import mandolanguage1 from "../images/mandolanguage1@4x.webp";
+import mandolanguage2 from "../images/mandolanguage2@4x.webp";
+
+import presentationProducts from "../images/presentation-products@4x.png";
 
 import ManageAnimation from "../homePageSections/ManageAnimation";
 // import HomeStrengths from "../homePageSections/HomeStrengths";
@@ -25,6 +27,7 @@ import "../css/HomepageSection.scss";
 import "../css/AppHeader.scss";
 
 import HomePageThreeCards from "../homePageSections/HomePageThreeCards";
+import FullWidthImg from "../materialComponents/ImageContainers/FullWidthImg";
 
 const Homepage = () => {
   const onClick = () => {
@@ -92,6 +95,9 @@ const Homepage = () => {
         adaptImg={adaptImg}
         manageImg={manageImg}
       />
+
+      <FullWidthImg img={presentationProducts}></FullWidthImg>
+
     </motion.div>
   );
 };

@@ -1,4 +1,4 @@
-import { MDBRow } from "mdb-react-ui-kit";
+// import { MDBRow } from "mdb-react-ui-kit";
 import ImgCol from "../columns/ImgCol";
 import TextCopyBtnCol from "../columns/TextCopyBtnCol";
 
@@ -12,19 +12,21 @@ const ImageWithText = ({
   btnType,
   btnLink,
   titleHighlighted,
-  mdNumber
+  mdNumberTxt,
+  mdNumberImg
 }) => {
   switch (direction) {
     case "textLeft":
       return (
         <div className="container my-5">
         <div className="row gx-lg-5 pt-5">
-          <ImgCol image={image}></ImgCol>
+          <ImgCol image={image} mdNumberImg={mdNumberImg}></ImgCol>
           <TextCopyBtnCol
             title={title}
             copy={copy}
             btnText={btnText}
             titleHighlighted={titleHighlighted}
+            mdNumberTxt={mdNumberTxt}
           ></TextCopyBtnCol>
         
         </div>
@@ -40,9 +42,9 @@ const ImageWithText = ({
             titleHighlighted={titleHighlighted}
             copy={copy}
             btnText={btnText}
-            mdNumber={mdNumber}
+            mdNumberTxt={mdNumberTxt}
           ></TextCopyBtnCol>
-          <ImgCol image={image}></ImgCol>
+           <ImgCol image={image} mdNumberImg={mdNumberImg}></ImgCol>
           </div>
         </div>
       );
@@ -51,18 +53,20 @@ const ImageWithText = ({
       return (
         <div className="container my-5">
         <div className="row gx-lg-5 pt-5">
-          <ImgCol image={image}></ImgCol>
+        <ImgCol image={image} mdNumberImg={mdNumberImg}></ImgCol>
 
           <TextCopyBtnCol
             title={title}
             copy={copy}
             btnText={btnText}
             titleHighlighted={titleHighlighted}
+            mdNumberTxt={mdNumberTxt}
           ></TextCopyBtnCol>
         </div>
         </div>
       );
   }
 };
+
 
 export default ImageWithText;

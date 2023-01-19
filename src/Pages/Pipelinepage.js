@@ -6,15 +6,17 @@ import MainFront from "../materialComponents/pageFronts/MainFront";
 import { motion } from "framer-motion";
 import MovingShapes from "../materialComponents/pageFronts/MovingShapes";
 import workFlowsImg from "../images/automatedWorkFlows@4x.png";
+import pipelineMainImg from "../images/pipeline-mainImg@4x.jpg";
+import FullWidthImg from "../materialComponents/ImageContainers/FullWidthImg";
 
 const Pipelinepage = () => {
   
   const pipelineMainFrontContent = {
     id: 1,
-    title: "Powered by Pipeline",
-    copy: "Our software keeps every element of your project together, in one place, while helping us produce and deliver your assets. You can order new projects, manage spend, produce instant adaptations, track your work, and get automated delivery—all from your homepage. It’s your favorite software you’ve never heard of.",
+    title: "Pipeline page title",
+    copy: "Pipeline page subtitle",
     // btnText: "Call to Action",
-    imgFirst: false
+    textFirst: true
   }
 
 
@@ -76,9 +78,12 @@ const Pipelinepage = () => {
       ease: "easeInOut",
     }}
   >
-   <MainFront
-    content={pipelineMainFrontContent}></MainFront>
+   {/* <MainFront
+    content={pipelineMainFrontContent}></MainFront> */}
     <MovingShapes></MovingShapes>
+
+    <FullWidthImg
+    img={pipelineMainImg}></FullWidthImg>
    
     <MDBContainer>
     {pipelineContentInfo.map((content) => (
