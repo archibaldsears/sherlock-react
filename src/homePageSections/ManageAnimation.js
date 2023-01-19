@@ -122,26 +122,18 @@ const ManageAnimation = ({ faceImg }) => {
     ],
   ];
 
-
   const keyframesReverse = [
-    [ 
+    [
       //position 1
-       //position 2
-       { y: positions.down30, opacity: position7 },
-       { y: positions.down25, opacity: position6 },
-       { y: positions.down20, opacity: position5 },
-       { y: positions.down15, opacity: position4 },
-       { y: positions.down10, opacity: position3 },
-       { y: positions.down5, opacity: position2 },
-       
-       { y: positions.position1, opacity: position1 },
-       
-       
-       
-      
+      //position 2
+      { y: positions.down30, opacity: position7 },
+      { y: positions.down25, opacity: position6 },
+      { y: positions.down20, opacity: position5 },
+      { y: positions.down15, opacity: position4 },
+      { y: positions.down10, opacity: position3 },
+      { y: positions.down5, opacity: position2 },
 
-      
-
+      { y: positions.position1, opacity: position1 },
     ],
     [
       //position 2
@@ -151,14 +143,8 @@ const ManageAnimation = ({ faceImg }) => {
       { y: positions.down15, opacity: position5 },
       { y: positions.down10, opacity: position4 },
       { y: positions.down5, opacity: position3 },
-      
+
       { y: positions.position1, opacity: position2 },
-      
-      
-      
-      
-      
-      
     ],
     [
       //position 3
@@ -168,14 +154,8 @@ const ManageAnimation = ({ faceImg }) => {
       { y: positions.down15, opacity: position6 },
       { y: positions.down10, opacity: position5 },
       { y: positions.down5, opacity: position4 },
-      
+
       { y: positions.position1, opacity: position3 },
-      
-      
-      
-      
-      
-      
     ],
     [
       { y: positions.up5, opacity: position3 },
@@ -184,14 +164,8 @@ const ManageAnimation = ({ faceImg }) => {
       { y: positions.down15, opacity: position7 },
       { y: positions.down10, opacity: position6 },
       { y: positions.down5, opacity: position5 },
-      
+
       { y: positions.position1, opacity: position4 },
-      
-      
-      
-      
-      
-      
     ],
     [
       { y: positions.up5, opacity: position4 },
@@ -200,14 +174,8 @@ const ManageAnimation = ({ faceImg }) => {
       { y: positions.up20, opacity: position1 },
       { y: positions.down10, opacity: position7 },
       { y: positions.down5, opacity: position6 },
-      
+
       { y: positions.position1, opacity: position5 },
-      
-      
-      
-      
-      
-      
     ],
     [
       { y: positions.up5, opacity: position5 },
@@ -216,14 +184,8 @@ const ManageAnimation = ({ faceImg }) => {
       { y: positions.up20, opacity: position2 },
       { y: positions.up25, opacity: position1 },
       { y: positions.down5, opacity: position7 },
-      
+
       { y: positions.position1, opacity: position6 },
-      
-      
-      
-      
-      
-      
     ],
     [
       { y: positions.up5, opacity: position6 },
@@ -232,14 +194,8 @@ const ManageAnimation = ({ faceImg }) => {
       { y: positions.up20, opacity: position3 },
       { y: positions.up25, opacity: position2 },
       { y: positions.up30, opacity: position1 },
-      
+
       { y: positions.position1, opacity: position7 },
-      
-      
-      
-      
-      
-      
     ],
   ];
 
