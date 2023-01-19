@@ -11,6 +11,7 @@ import adaptImg from "../images/Adapt-img@4x.webp";
 import manageImg from "../images/Desktop-img@4x.webp";
 
 import mandoBg from "../images/mando-bg@4x.png";
+import mandoBgNoTT from "../images/mando-bg-noTT@4x.png";
 import mandolanguage1 from "../images/mandolanguage1@4x.png";
 import mandolanguage2 from "../images/mandolanguage2@4x.png";
 
@@ -87,6 +88,7 @@ const Homepage = () => {
         createImg2={mandoBg}
         createImg3={mandolanguage1}
         createImg4={mandolanguage2}
+        mandoBgNoTT={mandoBgNoTT}
         adaptImg={adaptImg}
         manageImg={manageImg}
       />

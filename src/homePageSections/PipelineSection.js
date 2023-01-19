@@ -53,9 +53,10 @@ const PipelineSection = (props) => {
           <CreateDragDrop
           style={{width:'100%'}}
           image={props.createImg}
-          image2={props.createImg2}
+          mandoBg={props.createImg2}
           image3={props.createImg3}
           image4={props.createImg4}
+          mandoBgNoTT={props.mandoBgNoTT}
           title="Create."
           text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
           

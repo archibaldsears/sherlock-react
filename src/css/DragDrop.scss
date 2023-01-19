@@ -52,24 +52,24 @@
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg viewBox='0 0 182.931 182.931' fill='%23000000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M173.93 92.798c-4.971 0-9 4.029-9 9v50.404L30.728 18h50.404c4.971 0 9-4.029 9-9s-4.029-9-9-9H9C4.03 0 0 4.029 0 9 v72.132c0 4.971 4.029 9 9 9s9-4.029 9-9V30.729l134.202 134.202h-50.404c-4.971 0-9 4.029-9 9s4.029 9 9 9h72.132 c4.971 0 9-4.029 9-9v-72.132C182.93 96.828 178.901 92.798 173.93 92.798z' style='fill: rgb(255  255  255)%3B'/%3E%3C/svg%3E");
   background-position: bottom right;
   padding: 0 3px 3px 0;
-  &::after {
-    content: "move me!";
-    font-size: 0.75rem;
-    color: white;
-    position: relative;
-    top: 20px;
-    width: 100px;
-    text-align: right;
-    left: 20px;
-    transition: all 2s ease-in-out;
-  }
+  // &::after {
+  //   content: "move me!";
+  //   font-size: 0.75rem;
+  //   color: white;
+  //   position: relative;
+  //   top: 20px;
+  //   width: 100px;
+  //   text-align: right;
+  //   left: 20px;
+  //   transition: all 2s ease-in-out;
+  // }
 
-  &:hover {
-    &::after {
-      opacity: 0;
+  // &:hover {
+  //   &::after {
+  //     opacity: 0;
 
-    }
-  }
+  //   }
+  // }
 }
 .react-resizable-handle-sw {
   bottom: -20px;
@@ -128,4 +128,16 @@
 .create-text {
   position: relative;
   bottom: 1rem;
+}
+
+.btn-above {
+  position: relative;
+  // background-color: wheat;
+  .text-container {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    padding-top: 30px;
+  }
 }
