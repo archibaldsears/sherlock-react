@@ -11,6 +11,7 @@ import {
     MDBCardHeader
   } from 'mdb-react-ui-kit';
 import Button from '../../components/Button';
+import TextItemP from '../TextItems/TextItemP';
 
 const CardWithImage = ({card}) => {
   return (
@@ -23,9 +24,12 @@ const CardWithImage = ({card}) => {
     </MDBRipple>
     <MDBCardBody>
       <MDBCardTitle style={{fontSize: '2rem'}} >{card.title}</MDBCardTitle>
-      <MDBCardText className="text-start">
-        {card.copy}
-      </MDBCardText>
+      
+         <TextItemP
+         copy={card.copy}
+         size="small"
+         ></TextItemP>
+      
       <Button 
         Text={card.btnText}
         /> 

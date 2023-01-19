@@ -1,7 +1,7 @@
 @import './mdb.pro.scss';
 
-$my-theme-primary: #314476; // theme primary color, change this value to customize theme
-$my-theme-secondary: #FFA933; // theme secondary color, change this value to customize theme
+$my-theme-primary: #FFA933; // theme  primary color, change this value to customize theme
+$my-theme-secondary: #314476; // theme secondary color, change this value to customize theme
 
 $my-theme: mdb-light-theme($my-theme-primary, $my-theme-secondary); // create the new theme using primary and
 // secondary colors
@@ -13,7 +13,7 @@ $my-theme: mdb-light-theme($my-theme-primary, $my-theme-secondary); // create th
 a.nav-link {
     line-height: '2rem';
     &.selected {
-        color: $my-theme-secondary !important;
+        color: $secondary !important;
         text-underline-offset: 0.5rem;
     }
 }
@@ -81,5 +81,31 @@ a.nav-link {
 }
 #featured-image {
   z-index: 10;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.iso-class {
+    isolation: isolate;
+}
+
+// .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+//     color: #fff;
+//     background-color: $primary;
+//     border-color: $primary; /*set the color you want here*/
+// }
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open>.dropdown-toggle.btn-secondary {
+    color: #fff;
+    background-color: lighten($my-theme-secondary, 10%) !important;
+    border-color: $my-theme-secondary !important; /*set the color you want here*/
 }
 

@@ -599,7 +599,7 @@ $blue-grays: (
 // scss-docs-start color-variables
 $red: $red-500 !default;
 $pink: $pink-500 !default;
-$purple: purple-500 !default;
+$purple: $purple-500 !default;
 $indigo: $indigo-500 !default;
 $blue: $blue-500 !default;
 $cyan: $cyan-500 !default;
@@ -629,13 +629,13 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: #3b71ca !default;
-$secondary: #9fa6b2 !default;
-$success: #14a44d !default;
+$primary: #FFA933 !default;
+$secondary:  #314476!default;
+$success: #009193 !default;
 $danger: #dc4c64 !default;
 $warning: #e4a11b !default;
-$info: #54b4d3 !default;
-$light: #fbfbfb !default;
+$info: #2a7297 !default; 
+$light: #FEF7ED !default;
 $dark: #332d2d !default;
 // scss-docs-end theme-color-variables
 

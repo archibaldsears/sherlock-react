@@ -58,7 +58,7 @@ const PipelineSection = (props) => {
           image4={props.createImg4}
           title="Create."
           text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
-          btnText="Try it out"
+          
           />
           </MDBCol>
 
@@ -78,7 +78,7 @@ const PipelineSection = (props) => {
         image={props.adaptImg}
         title="Create."
           copy="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
-          btnText="Try it out"
+          
           direction="textRight"
       ></ImageWithText>
       </MDBContainer>
@@ -88,7 +88,7 @@ const PipelineSection = (props) => {
           manageImg={props.manageImg}
           title="Manage."
           text="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
-          btnText="Try it out"
+          
           direction=""
         /> */}
 
@@ -98,7 +98,7 @@ const PipelineSection = (props) => {
           direction="textLeft"
           title="Manage."
           copy="We become experts in your brand, and love to work with you to produce original marketing assets, from responsive display ads to print brochures."
-          btnText="Try it out"
+          
         ></ImageWithText> 
       
 

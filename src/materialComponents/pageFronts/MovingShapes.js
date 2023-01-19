@@ -1,7 +1,10 @@
+
 import React from 'react'
+import Button from '../../components/Button';
 import "../../css/MovingShapes.scss";
 // import mapImg from "../../images/mapImg@4x.png";
 import computerImg from "../../images/ComputerPipelineScreen@4x.webp";
+import TextCopyBtnCol from '../columns/TextCopyBtnCol';
 // import adaptImg from "../../images/Adapt-img@4x.webp";
 
 
@@ -9,30 +12,17 @@ const MovingShapes = () => {
   return (
     <div className="container my-5">
     <div className="row gx-lg-5 pt-5">
-        <div className="col-md-5 mb-9 mb-md-0 d-flex align-items-center p-4">
-        <div>
-            <h1 className="display-4 fw-bold lh-1 ls-tight mb-5">
-            Powered by<br />
-            <span className="text-secondary">Sherlock Pipeline</span>
-            </h1>
+ 
+        <TextCopyBtnCol
+        title="Powered by"
+        titleHighlighted="Sherlock Pipeline"
+        copy="Our software keeps every element of your project together, in one place, while helping us produce and deliver your assets. You can order new projects, manage spend, produce instant adaptations, track your work, and get automated delivery—all from your homepage. It’s your favorite software you’ve never heard of."
+        mdNumber="5"
+        btnText="Try it out"
+        btnTextSecondary="Learn more"
+        >
 
-            <p className="lead fw-normal text-muted">
-            Our software keeps every element of your project together, in one place, while helping us produce and deliver your assets. You can order new projects, manage spend, produce instant adaptations, track your work, and get automated delivery—all from your homepage. It’s your favorite software you’ve never heard of.
-            </p>
-
-            <button type="button" className="btn btn-secondary btn-lg mt-4 me-2">
-            Get Started
-            </button>
-            <button
-                    type="button"
-                    className="btn btn-link text-secondary btn-lg mt-4"
-                    data-ripple-color="secondary"
-                    >
-            Read more
-            </button>
-        </div>
-        </div>
-
+        </TextCopyBtnCol>
         <div
             className="
                     col-md-7
