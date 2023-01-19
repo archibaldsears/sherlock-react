@@ -49,7 +49,7 @@ const PipelineSection = (props) => {
 
       <MDBContainer>
         <MDBRow>
-          <MDBCol lg="8" style={{position:'relative'}}>
+          <MDBCol lg="8" className="overflow-visible"style={{position:'relative'}}>
           <CreateDragDrop
           style={{width:'100%'}}
           image={props.createImg}
@@ -66,7 +66,7 @@ const PipelineSection = (props) => {
           <TextCopyBtnCol
             title={'Adjust.'}
             copy={'Seamless review tools allow you to markup, comment, and leave decisions on assets within the Pipeline workflow. You can even make your own adjustments to assets in the tool.'}
-            btnText={'Learn More'}
+            // btnText={'Learn More'}
             mdNumber="4"
           ></TextCopyBtnCol>
         </MDBRow>

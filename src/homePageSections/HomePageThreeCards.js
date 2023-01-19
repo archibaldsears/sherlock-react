@@ -14,7 +14,7 @@ import {
 const HomePageThreeCards = ({cards}) => {
   return (
     <MDBContainer fluid className="bg-white">
-    <section className="container pt-5 mt-5">
+    <section className="container pt-5">
       <MDBRow evenly>
         {cards.map((card) => (
           <MDBCol sm="4" key={card.id}>

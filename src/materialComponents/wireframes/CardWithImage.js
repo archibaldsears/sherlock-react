@@ -30,9 +30,9 @@ const CardWithImage = ({card}) => {
          size="small"
          ></TextItemP>
       
-      <Button 
+      {/* <Button 
         Text={card.btnText}
-        /> 
+        />  */}
     </MDBCardBody>
   </MDBCard>
   )

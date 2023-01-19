@@ -12,25 +12,29 @@ const CreateDragDrop = (props) => {
   const [showTT, setShowTT] = useState(true);
 
   let toggleText = "Hide the original english";
+  let btnToggleType = "primary";
   const toggle = React.useCallback(
-    () => setShowTT(!showTT),
-    [showTT, setShowTT],
+    
+    () => {
+      setShowTT(!showTT)
+    },
+    [showTT, setShowTT, toggleText, btnToggleType],
   );
   
 
   if (showTT) {
     toggleText = "Hide the original english title"
+    btnToggleType = "primary"
   } else {
     toggleText="Show the original english title"
+    btnToggleType = "secondary"
   }
-
-
   
 
 
   return (
     <div
-      className="createImgContainer"
+      className="createImgContainer overflow-visible "
       style={{ backgroundImage: `url(${showTT ? props.mandoBg : props.mandoBgNoTT})` }}
     >
       <div className="btn-above">
@@ -38,7 +42,7 @@ const CreateDragDrop = (props) => {
           <Button
           Text={toggleText}
           onClick={toggle}
-          Type="secondary"
+          // Type={btnToggleType}
           ></Button>
         </div>
       </div>
@@ -46,7 +50,7 @@ const CreateDragDrop = (props) => {
         <motion.div
           drag
           dragMomentum={false}
-          dragConstraints={{ top: -60, left: -350, right: 30, bottom: 200 }}
+          dragConstraints={{ top: -60, left: -450, right: 30, bottom: 200 }}
           whileDrag={{ opacity: 0.8, scale: 1 }}
           whileFocus={{ zIndex: 2 }}
           dragElastic={0.1}
@@ -59,6 +63,7 @@ const CreateDragDrop = (props) => {
             height={88}
             minConstraints={[109, 44]}
             maxConstraints={[438, 176]}
+            lockAspectRatio={true}
           >
             <motion.img
               className="never-selector"
@@ -79,8 +84,8 @@ const CreateDragDrop = (props) => {
         <motion.div
           drag
           dragMomentum={false}
-          dragConstraints={{ top: -200, left: -350, right: 30, bottom: 50 }}
-          whileDrag={{ opacity: 0.8, scale: 1 }}
+          dragConstraints={{ top: -200, left: -450, right: 30, bottom: 50 }}
+          whileDrag={{ opacity: 0.8, scale: 1}}
           whileFocus={{ zIndex: 2 }}
           dragElastic={0.1}
           dragListener={shouldDrag2BeEnabled}
@@ -92,10 +97,13 @@ const CreateDragDrop = (props) => {
             height={88}
             minConstraints={[109, 44]}
             maxConstraints={[438, 176]}
+            lockAspectRatio={true}
           >
             <motion.img
               className="never-selector"
               src={props.image4}
+              // whileHover={{border: '1px dashed white'}}
+              
               onHoverStart={() => {
                 if (!shouldDrag2BeEnabled) {
                   setDrag2Enable(!shouldDrag2BeEnabled);

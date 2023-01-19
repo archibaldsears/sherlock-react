@@ -25,7 +25,7 @@ const Button = ({ Text, Color, Type, onClick }) => {
           onClick={onClick}
           className={
             // [Color, Type].join(" ") +
-            "btn-capitalize text-capitalize btn-lg mx-2 px-4 iso-class"
+            "btn-capitalize text-capitalize btn-lg mx-2 mt-4 px-4 iso-class"
           }
         >
           {Text}

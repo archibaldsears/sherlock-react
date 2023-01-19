@@ -12,11 +12,15 @@
     position: relative;
     bottom: 50px;
   }
+  img {
+    transition: all 200ms ease;
+  }
   img:hover {
     cursor: move; /* fallback if grab cursor is unsupported */
     cursor: grab;
     cursor: -moz-grab;
     cursor: -webkit-grab;
+    border: 1px dashed white;
   }
   img:active {
     cursor: grabbing;
@@ -78,7 +82,7 @@
   transform: rotate(90deg);
 }
 .react-resizable-handle-se {
-  bottom: -20px;
+  bottom: -10px;
   right: -10px;
   cursor: se-resize;
 }
@@ -131,13 +135,15 @@
 }
 
 .btn-above {
-  position: relative;
   // background-color: wheat;
+  position: relative;
   .text-container {
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-    text-align: center;
-    padding-top: 30px;
+    display: flex; // make us of Flexbox
+    align-items: center; // does vertically center the desired content
+    justify-content: center; // horizontally centers single line items
+    text-align: center; // optional, but helps horizontally center text that breaks into multiple lines
+    position: relative;
+    top: 420px;
+    right: 20px;
   }
 }

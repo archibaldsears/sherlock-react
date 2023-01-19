@@ -14,7 +14,7 @@ const Pipelinepage = () => {
     title: "Powered by Pipeline",
     copy: "Our software keeps every element of your project together, in one place, while helping us produce and deliver your assets. You can order new projects, manage spend, produce instant adaptations, track your work, and get automated delivery—all from your homepage. It’s your favorite software you’ve never heard of.",
     // btnText: "Call to Action",
-    imgFirst: true
+    imgFirst: false
   }
 
 
@@ -76,9 +76,10 @@ const Pipelinepage = () => {
       ease: "easeInOut",
     }}
   >
+   <MainFront
+    content={pipelineMainFrontContent}></MainFront>
     <MovingShapes></MovingShapes>
-    {/* <MainFront
-    content={pipelineMainFrontContent}></MainFront> */}
+   
     <MDBContainer>
     {pipelineContentInfo.map((content) => (
       <ImageWithText key={content.id}
