@@ -76,21 +76,21 @@ $line-spacing: 5rem;
       transition: opacity 1000ms ease-in;
       opacity: 1 !important;
     }
-    &::after {
-      transition: all 500ms ease-in-out;
-      content:"view more >";
-      position: absolute;
-      top: 2.5rem;
-      // bottom: -1px;
-      left: 2px;
-      // right: -2px;
-      z-index: 10;
-      font-size: 1rem;
-      opacity: 0;
-    }
-    &:hover::after {
-      opacity: 1;
-    }
+    // &::after {
+    //   transition: all 500ms ease-in-out;
+    //   content:"view more >";
+    //   position: absolute;
+    //   top: 2.5rem;
+    //   // bottom: -1px;
+    //   left: 2px;
+    //   // right: -2px;
+    //   z-index: 10;
+    //   font-size: 1rem;
+    //   opacity: 0;
+    // }
+    // &:hover::after {
+    //   opacity: 1;
+    // }
   }
 
 
