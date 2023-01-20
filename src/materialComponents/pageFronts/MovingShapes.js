@@ -64,6 +64,7 @@ const MovingShapes = () => {
         <div
             id="shape-3"
             className="
+            
                     rounded-circle
                     position-absolute
                     opacity-70

@@ -15,7 +15,7 @@ const ManageData = [
   },
   {
     id: 2,
-    text: "global brand delivery.",
+    text: "brand delivery.",
   },
   {
     id: 3,
