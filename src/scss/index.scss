@@ -109,3 +109,10 @@ button, input[type="submit"], input[type="reset"] {
     border-color: $my-theme-secondary !important; /*set the color you want here*/
 }
 
+.position-relative {
+  position: relative;
+}
+
+.absolute-item {
+  position: absolute;
+}

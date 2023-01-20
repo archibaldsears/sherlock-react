@@ -6,38 +6,43 @@ import HomePageAnimatedTextItem from "../components/HomePageAnimatedTextItem";
 import { motion } from "framer-motion";
 import TextItemH3 from "../materialComponents/TextItems/TextItemH3";
 import TextItemP from "../materialComponents/TextItems/TextItemP";
+import Button from "../components/Button";
+
+const ManageData = [
+  {
+    id: 1,
+    text: "project data.",
+  },
+  {
+    id: 2,
+    text: "global brand delivery.",
+  },
+  {
+    id: 3,
+    text: "translation.",
+  },
+  {
+    id: 4,
+    text: "creative projects.",
+  },
+  {
+    id: 5,
+    text: "product launches.",
+  },
+  {
+    id: 6,
+    text: "ad creation.",
+  },
+  {
+    id: 7,
+    text: "creative design.",
+  },
+];
+
 
 const ManageAnimation = ({ faceImg }) => {
-  const items = [
-    {
-      id: 1,
-      text: "project data.",
-    },
-    {
-      id: 2,
-      text: "global brand delivery.",
-    },
-    {
-      id: 3,
-      text: "translation.",
-    },
-    {
-      id: 4,
-      text: "creative projects.",
-    },
-    {
-      id: 5,
-      text: "product launches.",
-    },
-    {
-      id: 6,
-      text: "ad creation.",
-    },
-    {
-      id: 7,
-      text: "creative design.",
-    },
-  ];
+
+  const items = ManageData;
 
   var { positions, position7, position6, position5, position4, position3, position2, position1 } = CreatePositions();
 
@@ -46,21 +51,23 @@ const ManageAnimation = ({ faceImg }) => {
 
   return (
     <motion.div className="Main-container container">
-      <section className="Section-one row">
+      <section className="Section-one row justify-content-md-center">
         <motion.h1
           // initial={{ opacity: 0 }}
           // whileInView={{ opacity: 1 }}
           // viewport={{ once: true }}
-          className="title-static col-6 p-0"
+          className="title-static col-md-auto p-0 position-relative"
         >
           We manage your&nbsp;
-        </motion.h1>
-        {/* <div className="absolute-item">
+          <div className="absolute-item homePageIntro">
           <TextItemP
           copy="The Sherlock Company localizes and delivers your creative and marketing assets anywhere, in any spec or language, in any timeframe. "
           ></TextItemP>
-        </div> */}
-        <div className="itemContainer col-6 p-0">
+          <Button></Button>
+        </div>
+        </motion.h1>
+
+        <div className="itemContainer col-md-auto p-0">
           {items.map((item) => (
             <HomePageAnimatedTextItem
               key={item.id}
