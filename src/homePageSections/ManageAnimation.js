@@ -63,7 +63,13 @@ const ManageAnimation = ({ faceImg }) => {
           <TextItemP
           copy="The Sherlock Company localizes and delivers your creative and marketing assets anywhere, in any spec or language, in any timeframe. "
           ></TextItemP>
-          <Button></Button>
+          <Button
+          Text="Try it out for free"
+          ></Button>
+          <Button
+          Text="Contact us"
+          Type="secondary"
+          ></Button>
         </div>
         </motion.h1>
 
